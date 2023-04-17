@@ -7,25 +7,48 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LandingPage {
 	public WebDriver driver;
-	
-	//Objects 
-	@FindBy(linkText = "My Account")
-	private WebElement signinLink;
-	
+
+	// Objects
+	@FindBy(xpath = "//span[text()='My Account']")
+	private WebElement myAccountLink;
+
 	@FindBy(linkText = "Login")
 	private WebElement loginLink;
+
+	@FindBy(linkText = "Register")
+	private WebElement registerLink;
+
+	@FindBy(name = "search")
+	private WebElement searchButton;
 	
-	
-	//create a constructor 
+
+
+	// create a constructor
 	public LandingPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		
+
+	}
+
+	// action
+	public void clickOnMyAccountLink() {
+		myAccountLink.click();
+	}
+
+	public WebElement clickOnLoginLink() {
+		loginLink.click();
+		return loginLink;
+	}
+
+	
+	public void clickOnRegisterLink() {
+		registerLink.click();
+	}
+
+	public void clickOnSearchButton() {
+		searchButton.click();
 	}
 	
-	
-	
-	
-	//action 
+
 
 }

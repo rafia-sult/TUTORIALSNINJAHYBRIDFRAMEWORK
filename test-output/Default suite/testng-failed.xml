@@ -5,29 +5,9 @@
     <classes>
       <class name="com.tutorials.ninja.qa.testcases.LoginTest">
         <methods>
-          <include name="verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut"/>
-          <include name="verifyWorkingOfNavigationToCommandInLoginPage"/>
-          <include name="verifyLoginUsingInvalidEmailandValidPassword"/>
-          <include name="verifyLoginUsingInactiveCredentials"/>
-          <include name="verifyWorkingOfNavigationForwardCommandOfLoginPage"/>
-          <include name="verifyLoginUsingValidEmailandBlankPassword"/>
-          <include name="verifyWorkingOfNavigationRefreshCommandOfLoginPage"/>
-          <include name="verifyNavigationToDifferentPagesFromLoginPage"/>
-          <include name="verifyOpeningOfLoginLinkInANewTab"/>
-          <include name="verifyOpeningOfLoginLinkInANewWindow"/>
-          <include name="verifyLoginUsingBlankCredentials"/>
+          <include name="verifyInNavigationForwardCommandOfLoginPage"/>
           <include name="setUp"/>
-          <include name="verifyLoginUsingValidEmailandInvalidPassword"/>
-          <include name="verifyLoginUsingBlankEmailandValidPassword"/>
-          <include name="verifyWorkingOfNavigationBackCommandOfLoginPage"/>
-          <include name="verifyWorkingOfForgetPasswordLink"/>
-          <include name="verifyLoginUsingValidCredentialsPressingTheEnterKey"/>
-          <include name="verifyCopyAndPasteofThePasswordIsDisabled"/>
-          <include name="verifyTabKeyofTheKeyboardWorksOnLoginPage"/>
-          <include name="verifyLoginUsingValidCredentials"/>
-          <include name="verifyLoginUsingInvalidCredentials"/>
           <include name="tearDown"/>
-          <include name="verifyProperLogoutAfterLogin"/>
         </methods>
       </class> <!-- com.tutorials.ninja.qa.testcases.LoginTest -->
     </classes>

@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.tutorials.ninja.qa.testbase.TestBase;
+import com.tutorials.ninja.qa.testpages.LandingPage;
 import com.tutorials.ninja.qa.utils.Utilities;
 
 public class RegisterTest extends TestBase {
@@ -28,8 +29,11 @@ public class RegisterTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		driver = initializeBrowserAndOpenApplication(configProp.getProperty("browserName"));
-		driver.findElement(By.linkText("My Account")).click();
-		driver.findElement(By.linkText("Register")).click();
+		LandingPage landingpage = new LandingPage(driver);
+		landingpage.clickOnMyAccountLink();
+		landingpage.clickOnRegisterLink();
+//		driver.findElement(By.linkText("My Account")).click();
+//		driver.findElement(By.linkText("Register")).click();
 
 
 	}

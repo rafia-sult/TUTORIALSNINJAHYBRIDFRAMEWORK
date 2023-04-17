@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.tutorials.ninja.qa.testbase.TestBase;
+import com.tutorials.ninja.qa.testpages.LandingPage;
 
 public class SearchProductTest extends TestBase {
 
@@ -23,7 +24,9 @@ public class SearchProductTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		driver = initializeBrowserAndOpenApplication(configProp.getProperty("browserName"));
-		driver.findElement(By.name("search")).click();
+		LandingPage landingpage = new LandingPage(driver);
+		landingpage.clickOnSearchButton();
+//		driver.findElement(By.name("search")).click();
 	}
 	
 	
