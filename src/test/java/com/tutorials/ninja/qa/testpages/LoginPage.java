@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	public WebDriver driver;
 
-	// Objects
+
 
 	@FindBy(id = "input-email")
 	private WebElement emailIdTextBox;
@@ -32,15 +32,14 @@ public class LoginPage {
 	
 	
 
-	// constructor
+//  --------------------------------------------------------------------------------
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
+//  ---------------------------------------------------------------------------------	
 	
-	
-	// Actions
 
 	public void enterEmailId(String emailIdText) {
 		emailIdTextBox.sendKeys(emailIdText);

@@ -2,7 +2,6 @@ package com.tutorials.ninja.qa.testcases;
 
 import java.util.ArrayList;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,7 +12,11 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import com.tutorials.ninja.qa.testbase.TestBase;
+import com.tutorials.ninja.qa.testpages.InsideOfLoginPage;
 import com.tutorials.ninja.qa.testpages.LandingPage;
+import com.tutorials.ninja.qa.testpages.LogoutPage;
+import com.tutorials.ninja.qa.testpages.RegisterPage;
+import com.tutorials.ninja.qa.testpages.RegistrationSuccessPage;
 import com.tutorials.ninja.qa.utils.Utilities;
 
 public class RegisterTest extends TestBase {
@@ -25,75 +28,87 @@ public class RegisterTest extends TestBase {
 	public static ChromeOptions options;
 	public static WebDriver driver;
 	public static SoftAssert softassert = new SoftAssert();
+	public static LandingPage landingpage;
+	public static RegisterPage registerpage;
+	public static RegistrationSuccessPage registrationsuccesspage;
+	public static InsideOfLoginPage insideofloginpage;
+	public static LogoutPage logoutpage;
+	public static Actions action;
+	
 
 	@BeforeMethod
 	public void setUp() {
 		driver = initializeBrowserAndOpenApplication(configProp.getProperty("browserName"));
-		LandingPage landingpage = new LandingPage(driver);
+		landingpage = new LandingPage(driver);
 		landingpage.clickOnMyAccountLink();
 		landingpage.clickOnRegisterLink();
-//		driver.findElement(By.linkText("My Account")).click();
-//		driver.findElement(By.linkText("Register")).click();
+		
 
 
 	}
 	
 	@Test (priority =1)
 	public void verifyRegisterAnAccountWithMandatoryFields() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForRegister = (driver.findElement(By.xpath("//h1[contains(text(),'Your Account Has Been Created!')]")).getText());
-		String expectedMessageForRegister = "Your Account Has Been Created!";
-		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister),"Validation for registering account does not match");
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister), "Validation for registering account does not match");
 		softassert.assertAll();
+		
 	
 	}
 	
 	@Test (priority =2)
 	public void verifyRegisterAnAccountByProvidingAllFields() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForRegister = (driver.findElement(By.xpath("//h1[contains(text(),'Your Account Has Been Created!')]")).getText());
-		String expectedMessageForRegister = "Your Account Has Been Created!";
-		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister),"Validation for registering account does not match");
-		softassert.assertAll();
-	
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister), "Validation for registering account does not match");
+		softassert.assertAll();		
+
 	}
 
 	
 	@Test (priority = 3)
 	public void verifyRegisterWithOnlyFirstName() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");		
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForLastName = (driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div[contains(text(),'Last Name must be between 1 and 32 characters!')]")).getText());
-		String expectedMessageForLastName = "Last Name must be between 1 and 32 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();	
+		String actualMessageForLastName = registerpage.warningMessageForLastNameDisplayedOrNot();
+		String expectedMessageForLastName = testDataProp.getProperty("lastNameWarningMessage");
 		softassert.assertTrue(actualMessageForLastName.contains(expectedMessageForLastName),"Error message for missing last name does not exits");
 		softassert.assertAll();
 	}
 	
 	@Test (priority =4)
 	public void verifyRegisterWithOnlyFirstAndLastName() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForEmail = (driver.findElement(By.xpath("//div[contains(text(),'E-Mail Address does not appear to be valid!')]")).getText());
-		String expectedMessageForEmail = "E-Mail Address does not appear to be valid!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();
+		String actualMessageForEmail = registerpage.warningMessageForEmailDisplayedOrNot();
+		String expectedMessageForEmail = testDataProp.getProperty("emailWarningMessage");
 		softassert.assertTrue(actualMessageForEmail.contains(expectedMessageForEmail),"Error message for missing email does not exits");
 		softassert.assertAll();
 	}
@@ -101,45 +116,48 @@ public class RegisterTest extends TestBase {
 	
 	@Test (priority =5)
 	public void verifyRegisterUptoEmail() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());	
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForTelephone = (driver.findElement(By.xpath("//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")).getText());
-		String expectedMessageForTelephone = "Telephone must be between 3 and 32 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();
+		String actualMessageForTelephone = registerpage.warningMessageForTelephoneDisplayedOrNot();
+		String expectedMessageForTelephone = testDataProp.getProperty("telephoneWarningMessage");
 		softassert.assertTrue(actualMessageForTelephone.contains(expectedMessageForTelephone), "Error message for missing telephone does not exits");
 		softassert.assertAll();
 	}
 	
 	@Test (priority =6)
 	public void verifyRegisterUptoTelePhoneNumber() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForPassword = (driver.findElement(By.xpath("//div[contains(text(),'Password must be between 4 and 20 characters!')]")).getText());
-		String expectedMessageForPassword = "Password must be between 4 and 20 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();
+		String actualMessageForPassword = registerpage.warningMessageForPasswordDisplayedOrNot();
+		String expectedMessageForPassword = testDataProp.getProperty("passwordWarningMessage");
 		softassert.assertTrue(actualMessageForPassword.contains(expectedMessageForPassword), "Error message for missing password does not exits");
 		softassert.assertAll();
 	}
 	
 	@Test (priority =7)
 	public void verifyRegisterUptoPassword() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForConfirmPassword = (driver.findElement(By.xpath("//div[contains(text(),'Password confirmation does not match password!')]")).getText());
-		String expectedMessageConfirmForPassword = "Password confirmation does not match password!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForConfirmPassword = registerpage.warningMessageForConfirmPasswordDisplayedOrNot();
+		String expectedMessageConfirmForPassword = testDataProp.getProperty("confirmPasswordWarningMessage");
 		softassert.assertTrue(actualMessageForConfirmPassword.contains(expectedMessageConfirmForPassword), "Error message for missing confirmation password does not exits");
 		softassert.assertAll();
 	}
@@ -147,16 +165,17 @@ public class RegisterTest extends TestBase {
 
 	@Test (priority =8)
 	public void verifyRegisterWithoutCheckingPrivacyPolicy() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForUncheckedPrivacyButton = (driver.findElement(By.cssSelector(".alert.alert-danger.alert-dismissible")).getText());
-		String expectedMessageForUncheckedPrivacyButton = "Warning: You must agree to the Privacy Policy!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnContinueButton();	
+		String actualMessageForUncheckedPrivacyButton = registerpage.warningMessageForPrivacyPolicyDisplayedOrNot();
+		String expectedMessageForUncheckedPrivacyButton = testDataProp.getProperty("warningMessageForUncheckedPrivacyPolicyButton");
 		softassert.assertTrue(actualMessageForUncheckedPrivacyButton.contains(expectedMessageForUncheckedPrivacyButton), "Error message for unchecked privacy policy button does not exits");
 		softassert.assertAll();
 
@@ -165,17 +184,18 @@ public class RegisterTest extends TestBase {
 
 	@Test (priority =9)
 	public void verifyRegisterByEnteringDifferentPasswordForThePasswordFields() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@12");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForConfirmPassword = (driver.findElement(By.xpath("//div[contains(text(),'Password confirmation does not match password!')]")).getText());
-		String expectedMessageConfirmForPassword = "Password confirmation does not match password!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword(testDataProp.getProperty("differentPasswordNo1"));
+		registerpage.enterConfirmPassword(testDataProp.getProperty("differentPasswordNo2"));
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForConfirmPassword = registerpage.warningMessageForConfirmPasswordDisplayedOrNot();
+		String expectedMessageConfirmForPassword = testDataProp.getProperty("confirmPasswordWarningMessage");
 		softassert.assertTrue(actualMessageForConfirmPassword.contains(expectedMessageConfirmForPassword), "Error message for missing confirmation password does not exits");
 		softassert.assertAll();
 	}
@@ -183,53 +203,54 @@ public class RegisterTest extends TestBase {
 
 	@Test (priority =10)
 	public void verifyRegisterSubscribedYes() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.xpath("//label[@class='radio-inline']/child::input")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessage = (driver.findElement(By.xpath("//h1[contains(text(),'Your Account Has Been Created!')]")).getText());
-		String expectedMessage = "Your Account Has Been Created!";
-		softassert.assertTrue(actualMessage.contains(expectedMessage),"Validation for registering account does not match");
-		softassert.assertAll();
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister), "Validation for registering account does not match");
+		softassert.assertAll();	
 	}
 	
 
 	@Test (priority =11)
 	public void verifyRegisterSubscribedNo() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessage = (driver.findElement(By.xpath("//h1[contains(text(),'Your Account Has Been Created!')]")).getText());
-		String expectedMessage = "Your Account Has Been Created!";
-		softassert.assertTrue(actualMessage.contains(expectedMessage),"Validation for registering account does not match");
-		softassert.assertAll();
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister), "Validation for registering account does not match");
+		softassert.assertAll();	
 	}
 	
 	
 	@Test (priority =12)
 	public void verifyRegisterUsingExistingEmail() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys(testDataProp.getProperty("existingEmail"));
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForExistingEmail = (driver.findElement(By.cssSelector(".alert.alert-danger.alert-dismissible")).getText());
-		String expectedMessageForExistingEmial = "Warning: E-Mail Address is already registered!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail (testDataProp.getProperty("existingEmail"));
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForExistingEmail = registerpage.warningMessageForExistingEmailDisplayedOrNot();
+		String expectedMessageForExistingEmial = testDataProp.getProperty("warningMessageForExistingEmail");
 		softassert.assertTrue(actualMessageForExistingEmail.contains(expectedMessageForExistingEmial),"Error message for existing email does not match");
 		softassert.assertAll();
 	}
@@ -238,172 +259,296 @@ public class RegisterTest extends TestBase {
 
 	@Test (priority =13)
 	public void verifyRegisterUsingMoreThan32NumbersForTelePhoneNumber() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000000000000000000000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForTelephone = (driver.findElement(By.xpath("//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")).getText());
-		String expectedMessageForTelephone = "Telephone must be between 3 and 32 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000000000000000000000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();
+		String actualMessageForTelephone = registerpage.warningMessageForTelephoneDisplayedOrNot();
+		String expectedMessageForTelephone = testDataProp.getProperty("telephoneWarningMessage");
 		softassert.assertTrue(actualMessageForTelephone.contains(expectedMessageForTelephone), "Error message for missing telephone does not exits");
 		softassert.assertAll();
 	}
 	
 
 	@Test (priority =14)
-	public void verifyRegisterAnAccountWithoutFilling() {
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();	
+	public void verifyRegisterAnAccountWithoutFillingAnything() {
+		registerpage = new RegisterPage(driver);
+		registerpage.clickOnContinueButton();		
+		String actualMessageForUncheckedPrivacyButton = registerpage.warningMessageForPrivacyPolicyDisplayedOrNot();
+		String expectedMessageForUncheckedPrivacyButton = testDataProp.getProperty("warningMessageForUncheckedPrivacyPolicyButton");
+		softassert.assertTrue(actualMessageForUncheckedPrivacyButton.contains(expectedMessageForUncheckedPrivacyButton), "Error message for unchecked privacy policy button does not exits");
 
+		String actualMessageForFirstName = registerpage.warningMessageForFirstNameDisplayedOrNot();
+		String expectedMessageForFirstName = testDataProp.getProperty("firstNameWarningMessage");
+		softassert.assertTrue(actualMessageForFirstName.contains(expectedMessageForFirstName),"Error message for missing first name does not exits");		
+
+		String actualMessageForLastName = registerpage.warningMessageForLastNameDisplayedOrNot();
+		String expectedMessageForLastName = testDataProp.getProperty("lastNameWarningMessage");
+		softassert.assertTrue(actualMessageForLastName.contains(expectedMessageForLastName),"Error message for missing last name does not exits");		
 		
-		String actualMessageForPrivacyPolicy = (driver.findElement(By.cssSelector(".alert.alert-danger.alert-dismissible")).getText());
-		String expectedMessageForPrivacyPolicy = "Warning: You must agree to the Privacy Policy!";
-		softassert.assertTrue(actualMessageForPrivacyPolicy.contains(expectedMessageForPrivacyPolicy), "Error message for privacy policy does not exits");
-		softassert.assertAll();
+		String actualMessageForEmail = registerpage.warningMessageForEmailDisplayedOrNot();
+		String expectedMessageForEmail = testDataProp.getProperty("emailWarningMessage");
+		softassert.assertTrue(actualMessageForEmail.contains(expectedMessageForEmail),"Error message for missing email does not exits");
 		
-		String actualMessageForFirstName = (driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div[@class='text-danger']")).getText());
-		String expectedMessageForFirstName = "First Name must be between 1 and 32 characters!";
-		softassert.assertTrue(actualMessageForFirstName.contains(expectedMessageForFirstName), "Error message for missing first name does not match");
+		String actualMessageForTelephone = registerpage.warningMessageForTelephoneDisplayedOrNot();
+		String expectedMessageForTelephone = testDataProp.getProperty("telephoneWarningMessage");
+		softassert.assertTrue(actualMessageForTelephone.contains(expectedMessageForTelephone), "Error message for missing telephone does not exits");		
 		
-		String actualMessageForLastName = (driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div[contains(text(),'Last Name must be between 1 and 32 characters!')]")).getText());
-		String expectedMessageForLastName = "Last Name must be between 1 and 32 characters!";
-		softassert.assertTrue(actualMessageForLastName.contains(expectedMessageForLastName),"Error message for missing last name does not match");
-		
-		String actualMessageForEmail = (driver.findElement(By.xpath("//div[contains(text(),'E-Mail Address does not appear to be valid!')]")).getText());
-		String expectedMessageForEmail = "E-Mail Address does not appear to be valid!";
-		softassert.assertTrue(actualMessageForEmail.contains(expectedMessageForEmail),"Error message for missing email does not match");
-		
-		String actualMessageForTelephone = (driver.findElement(By.xpath("//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")).getText());
-		String expectedMessageForTelephone = "Telephone must be between 3 and 32 characters!";
-		softassert.assertTrue(actualMessageForTelephone.contains(expectedMessageForTelephone), "Error message for missing telephone does not exits");
-		
-		String actualMessageForPassword = (driver.findElement(By.xpath("//div[contains(text(),'Password must be between 4 and 20 characters!')]")).getText());
-		String expectedMessageForPassword = "Password must be between 4 and 20 characters!";
+		String actualMessageForPassword = registerpage.warningMessageForPasswordDisplayedOrNot();
+		String expectedMessageForPassword = testDataProp.getProperty("passwordWarningMessage");
 		softassert.assertTrue(actualMessageForPassword.contains(expectedMessageForPassword), "Error message for missing password does not exits");
 		softassert.assertAll();
-		
 		
 }
 	
 	@Test(priority = 15)
 	public void verifyRegisterUsingMoreThan32CharactersForFirstName() {
-		driver.findElement(By.id("input-firstname")).sendKeys("Johnqwetyweyioptwotyuewtiwoiweoiutp");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();	
-		String actualMessageForFirstName = (driver.findElement(By.xpath("//input[@id='input-firstname']/following-sibling::div[@class='text-danger']")).getText());
-		String expectedMessageForFirstName = "First Name must be between 1 and 32 characters!";
-		softassert.assertTrue(actualMessageForFirstName.contains(expectedMessageForFirstName), "Error message for missing first name does not match");
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName("Johnqwetyweyioptwotyuewtiwoiweoiutp");
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();	
+		String actualMessageForFirstName = registerpage.warningMessageForFirstNameDisplayedOrNot();
+		String expectedMessageForFirstName = testDataProp.getProperty("firstNameWarningMessage");
+		softassert.assertTrue(actualMessageForFirstName.contains(expectedMessageForFirstName),"Error message for missing first name does not exits");
 		softassert.assertAll();
+
 	}
 	
 	
 	@Test(priority = 16)
 	public void verifyRegisterUsingMoreThan32CharactersForLastName() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smithrtaieerrtytuefhkadsjfiuoehfas");
-		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();	
-		String actualMessageForLastName = (driver.findElement(By.xpath("//input[@id='input-lastname']/following-sibling::div[contains(text(),'Last Name must be between 1 and 32 characters!')]")).getText());
-		String expectedMessageForLastName = "Last Name must be between 1 and 32 characters!";
-		softassert.assertTrue(actualMessageForLastName.contains(expectedMessageForLastName),"Error message for missing last name does not match");
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName("Johnqwetyweyioptwotyuewtiwoiweoiutp");
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();	
+		String actualMessageForLastName = registerpage.warningMessageForLastNameDisplayedOrNot();
+		String expectedMessageForLastName = testDataProp.getProperty("lastNameWarningMessage");
+		softassert.assertTrue(actualMessageForLastName.contains(expectedMessageForLastName),"Error message for missing last name does not exits");		
 		softassert.assertAll();
 	}
 	
 	@Test(priority = 17)
 	public void verifyRegisterUsingMoreThan20CharactersForPassword() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("Seleniumwe1332455asdfghjkrtyughj");
-		driver.findElement(By.id("input-confirm")).sendKeys("Seleniumwe1332455asdfghjkrtyughj");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();	
-		String actualMessageForPassword = (driver.findElement(By.xpath("//div[contains(text(),'Password must be between 4 and 20 characters!')]")).getText());
-		String expectedMessageForPassword = "Password must be between 4 and 20 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Seleniumwe1332455asdfghjkrtyughjasyretryutkgj");
+		registerpage.enterConfirmPassword("Seleniumwe1332455asdfghjkrtyughjrfjhgkhjtyiu");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();	
+		String actualMessageForPassword = registerpage.warningMessageForPasswordDisplayedOrNot();
+		String expectedMessageForPassword = testDataProp.getProperty("passwordWarningMessage");
 		softassert.assertTrue(actualMessageForPassword.contains(expectedMessageForPassword), "Error message for missing password does not exits");
-		softassert.assertAll();
+		softassert.assertAll();	
+		
 	}
 	
 	@Test(priority = 18)
 	public void verifyRegisterUsingLessThan4CharactersForPassword() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smithrtaiuefhkadsjfiuoehfas");
-		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("0000000000");
-		driver.findElement(By.id("input-password")).sendKeys("123");
-		driver.findElement(By.id("input-confirm")).sendKeys("123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();	
-		String actualMessageForPassword = (driver.findElement(By.xpath("//div[contains(text(),'Password must be between 4 and 20 characters!')]")).getText());
-		String expectedMessageForPassword = "Password must be between 4 and 20 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("123");
+		registerpage.enterConfirmPassword("123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();	
+		String actualMessageForPassword = registerpage.warningMessageForPasswordDisplayedOrNot();
+		String expectedMessageForPassword = testDataProp.getProperty("passwordWarningMessage");
 		softassert.assertTrue(actualMessageForPassword.contains(expectedMessageForPassword), "Error message for missing password does not exits");
-		softassert.assertAll();
+		softassert.assertAll();	
 	}
 	
 	@Test (priority =19)
 	public void verifyRegisterUsingLessThan3NumbersForTelePhoneNumber() {
-		driver.findElement(By.id("input-firstname")).sendKeys("John");
-		driver.findElement(By.id("input-lastname")).sendKeys("Smith");
-		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-		driver.findElement(By.id("input-telephone")).sendKeys("00");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
-		driver.findElement(By.name("newsletter")).click();
-		driver.findElement(By.name("agree")).click();
-		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
-		String actualMessageForTelephone = (driver.findElement(By.xpath("//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")).getText());
-		String expectedMessageForTelephone = "Telephone must be between 3 and 32 characters!";
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("12");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();
+		String actualMessageForTelephone = registerpage.warningMessageForTelephoneDisplayedOrNot();
+		String expectedMessageForTelephone = testDataProp.getProperty("telephoneWarningMessage");
 		softassert.assertTrue(actualMessageForTelephone.contains(expectedMessageForTelephone), "Error message for missing telephone does not exits");
 		softassert.assertAll();
 	}
 	
 	@Test(priority = 20)
-	public void verifyOpeningOfLoginLinkInANewTab() throws Exception {
+	public void verifyOpeningOfRegisterPageInANewTab() {
 
-		Actions action = new Actions(driver);
-		action.keyDown(Keys.CONTROL).moveToElement(driver.findElement(By.linkText("Register"))).click().perform();
-
+		action = new Actions(driver);
+		action.keyDown(Keys.CONTROL).moveToElement(landingpage.clickOnRegisterLink()).click().perform();;
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 
 	}
 
 	@Test(priority = 21)
-	public void verifyOpeningOfLoginLinkInANewWindow() throws Exception {
-//		WebElement registerLink = driver.findElement(By.linkText("Register"));
-
-
-		Actions action = new Actions(driver);
-		action.keyDown(Keys.SHIFT).click(driver.findElement(By.linkText("Register"))).keyUp(Keys.SHIFT).click().perform();
+	public void verifyOpeningOfRegisterPageInANewWindow() {
+		
+		action = new Actions(driver);
+		action.keyDown(Keys.SHIFT).click(landingpage.clickOnRegisterLink()).keyUp(Keys.SHIFT).click().perform();
+	
+	}
+	
+	@Test(priority = 22)
+	public void verifyLoginAfterRegistration() {
+		
+		registerpage = new RegisterPage(driver);
+		registrationsuccesspage = new RegistrationSuccessPage(driver);
+		insideofloginpage = new InsideOfLoginPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister), "Validation for registering account does not match");
+		registrationsuccesspage.clickOnContinueButton();
+		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
+		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		softassert.assertAll();		
+	}
+	
+	@Test(priority = 23)
+	public void verifyProperLogoutAfterRegistration() {
+		
+		registerpage = new RegisterPage(driver);
+		registrationsuccesspage = new RegistrationSuccessPage(driver);
+		insideofloginpage = new InsideOfLoginPage(driver);
+		logoutpage = new LogoutPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();		
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister), "Validation for registering account does not match");
+		registrationsuccesspage.clickOnContinueButton();
+		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
+		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		insideofloginpage.clickOnLogoutButton();
+		String actualMessageForLogout = logoutpage.retrieveLogoutValidationMessage();
+		String expectedMessageForLogout = testDataProp.getProperty("validateLogout");
+		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),"Logout confirmation text does not match");
+		softassert.assertAll();	
 	}
 
-	
+	@Test(priority = 24)
+	public void verifyENTERKeyOfKeyboardWorksOnRegistrationPage() {
 
+		registerpage = new RegisterPage(driver);
+		registrationsuccesspage = new RegistrationSuccessPage(driver);
+		insideofloginpage = new InsideOfLoginPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		registerpage.clickOnSubscribeButton();
+		registerpage.clickOnPrivacyPolicyButton().sendKeys(Keys.ENTER);
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = testDataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister),"Validation for registering account does not match");
+		softassert.assertAll();
+	}
 	
+	@Test(priority = 25)
+	public void verifyBACKSPACEofKeyboardWorksInRegisterPage() {
+
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName")).sendKeys(Keys.BACK_SPACE);
+		
+		
+	}
 	
+	@Test(priority = 26)
+	public void verifyCopyAndPasteWorksOnRegisterPage()   {
+
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName")).sendKeys(Keys.CONTROL + "a" + "c");
+		registerpage.enterLastName(testDataProp.getProperty("lastName")).sendKeys(Keys.CONTROL + "v");
+		
+	}
 	
+	@Test(priority = 27)
+	public void verifyNavigateTOcommandInRegisterPage()   {
+
+		driver.navigate().to(testDataProp.getProperty("googleURL"));
+
+		
+	}
+	
+	@Test(priority = 28)
+	public void verifyNavigateBACKcommandInRegisterPage()   {
+
+		registerpage = new RegisterPage(driver);
+		driver.navigate().to(testDataProp.getProperty("googleURL"));
+		driver.navigate().back();
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		
+	}
+	
+	@Test(priority = 29)
+	public void verifyNavigationFORWARDcommandInRegisterPage() {
+		registerpage = new RegisterPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		driver.navigate().back();
+		driver.navigate().forward();	
+	}
+	
+	@Test(priority = 30)
+	public void verifyNavigationREFRESHcommandInRegisterPage()  {
+		registerpage = new RegisterPage(driver);
+		registrationsuccesspage = new RegistrationSuccessPage(driver);
+		insideofloginpage = new InsideOfLoginPage(driver);
+		registerpage.enterFirstName(testDataProp.getProperty("firstName"));
+		registerpage.enterLastName(testDataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone("0000000000");
+		registerpage.enterPassword("Selenium@123");
+		registerpage.enterConfirmPassword("Selenium@123");
+		driver.navigate().refresh();
+	}
 	
 	
 	@AfterMethod
 	public void tearDown() {
-	//	driver.quit();
+		driver.quit();
 	}
 	
 	

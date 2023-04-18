@@ -41,8 +41,9 @@ public class LandingPage {
 	}
 
 	
-	public void clickOnRegisterLink() {
+	public WebElement clickOnRegisterLink() {
 		registerLink.click();
+		return registerLink;
 	}
 
 	public void clickOnSearchButton() {

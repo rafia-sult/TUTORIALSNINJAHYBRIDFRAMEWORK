@@ -202,7 +202,7 @@ public class LoginTest extends TestBase {
 	}
 
 	@Test(priority = 13)
-	public void verifyOpeningOfLoginLinkInANewTab_012() {
+	public void verifyOpeningOfLoginPageInANewTab_012() {
 		action = new Actions(driver);
 		action.keyDown(Keys.CONTROL).moveToElement(landingpage.clickOnLoginLink()).click().perform();;
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
@@ -212,7 +212,7 @@ public class LoginTest extends TestBase {
 	}
 
 	@Test(priority = 14)
-	public void verifyOpeningOfLoginLinkInANewWindow_013() {
+	public void verifyOpeningOfLoginPageInANewWindow_013() {
 
 		action = new Actions(driver);
 		action.keyDown(Keys.SHIFT).click(landingpage.clickOnLoginLink()).keyUp(Keys.SHIFT).click().perform();
@@ -278,7 +278,7 @@ public class LoginTest extends TestBase {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
 		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword")).sendKeys(Keys.ENTER);;
+		loginpage.enterPassword(configProp.getProperty("validPassword")).sendKeys(Keys.ENTER);
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
 		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
 		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
