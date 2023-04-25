@@ -15,20 +15,21 @@ import com.tutorials.ninja.qa.utils.Utilities;
 
 public class TestBase {
 	public static WebDriver driver;
-	public Properties configProp;
-	public Properties testDataProp;
+	public Properties prop;
+	public Properties dataProp;
 	public FileInputStream ip;
 	public ChromeOptions options;
-	
+
 	public TestBase() throws Exception {
-		configProp = new Properties();
-		ip = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\com\\tutorials\\ninja\\qa\\config\\config.properties");
-		configProp.load(ip);
-		
-		
-		testDataProp = new Properties();
-		ip = new FileInputStream(System.getProperty("user.dir")+ "\\src\\test\\java\\com\\tutorials\\ninja\\qa\\testdata\\TestData.properties");
-		testDataProp.load(ip);
+		prop = new Properties();
+		ip = new FileInputStream(System.getProperty("user.dir")
+				+ "\\src\\main\\java\\com\\tutorials\\ninja\\qa\\config\\config.properties");
+		prop.load(ip);
+
+		dataProp = new Properties();
+		ip = new FileInputStream(System.getProperty("user.dir")
+				+ "\\src\\test\\java\\com\\tutorials\\ninja\\qa\\testdata\\TestData.properties");
+		dataProp.load(ip);
 	}
 
 	public WebDriver initializeBrowserAndOpenApplication(String browserName) {
@@ -50,7 +51,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Utilities.implicitWaitTime));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Utilities.pageLoadTime));
 		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(Utilities.scriptTime));
-		driver.get(configProp.getProperty("url"));
+		driver.get(prop.getProperty("url"));
 		return driver;
 
 	}

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.tutorials.ninja.qa.testcases.SearchProductTest">
         <methods>
-          <include name="verifyOpeningOfLoginPageInANewWindow_013"/>
+          <include name="verifySearchWithSpecialCharacter"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

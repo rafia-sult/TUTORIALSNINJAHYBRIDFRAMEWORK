@@ -1,19 +1,19 @@
 package com.tutorials.ninja.qa.utils;
 
+import java.security.SecureRandom;
 import java.util.Date;
 
 public class Utilities {
+
+	private static final String CHAR_POOL = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+|";
+	private static final int DEFAULT_LENGTH = 14;
+	private static final String char_pool = "0123456789";
+	private static final int DEFAULT_PHONE_LENGTH = 11;
 
 	public static String generateEmailWithTimeStamp() {
 		Date date = new Date();
 		String timeStamp = date.toString().replace(" ", "_").replace(":", "_");
 		return "johnsmith" + timeStamp + "@gmail.com";
-	}
-
-	public static String generatePasswordWithTimeStamp() {
-		Date date = new Date();
-		String timeStamp = date.toString().replace(" ", "_").replace(":", "_");
-		return timeStamp;
 	}
 
 	public static String generateNameforEmailWithTimeStamp() {
@@ -22,6 +22,46 @@ public class Utilities {
 		;
 		return "johnsmith" + timeStamp;
 
+	}
+
+//	public static void main(String[] args) {
+//		System.out.println(generatePasswordWithTimeStamp(14));
+//		System.out.println(generatePasswordWithTimeStamp(12));
+//		System.out.println(generatePasswordWithTimeStamp(30));
+//
+//		System.out.println(generatePhoneNumber(11));
+//	}
+
+	public static String generatePassword(int length) {
+		if (length < 2) {
+			length = DEFAULT_LENGTH;
+
+		}
+
+		SecureRandom random = new SecureRandom();
+		StringBuilder password = new StringBuilder();
+
+		for (int i = 0; i < length; i++) {
+			int index = random.nextInt(CHAR_POOL.length());
+			password.append(CHAR_POOL.charAt(index));
+		}
+		return password.toString();
+	}
+
+	public static String generatePhoneNumber(int length) {
+		if (length < 2) {
+			length = DEFAULT_PHONE_LENGTH;
+
+		}
+
+		SecureRandom random = new SecureRandom();
+		StringBuilder password = new StringBuilder();
+
+		for (int i = 0; i < length; i++) {
+			int index = random.nextInt(char_pool.length());
+			password.append(char_pool.charAt(index));
+		}
+		return password.toString();
 	}
 
 	public static final int implicitWaitTime = 10;

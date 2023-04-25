@@ -18,6 +18,9 @@ public class InsideOfLoginPage {
 	@FindBy(linkText = "Tablets")
 	private WebElement tabletsButton;
 
+	@FindBy(linkText = "Software")
+	private WebElement softwareButton;
+
 	@FindBy(linkText = "Logout")
 	private WebElement logoutButton;
 
@@ -31,14 +34,21 @@ public class InsideOfLoginPage {
 		return displayStatus;
 	}
 
-	public void clickOnPhonesAndPDAsButton() {
+	public WebElement clickOnPhonesAndPDAsButton() {
 		phonesAndPDAsButton.click();
+		return phonesAndPDAsButton;
 	}
 
-	public void clickOnTabletsButton() {
+	public WebElement clickOnTabletsButton() {
 		tabletsButton.click();
+		return tabletsButton;
 	}
-	
+
+	public WebElement clickOnSoftwareButton() {
+		softwareButton.click();
+		return softwareButton;
+	}
+
 	public void clickOnLogoutButton() {
 		logoutButton.click();
 	}

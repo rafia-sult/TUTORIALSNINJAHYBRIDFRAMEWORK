@@ -1,7 +1,6 @@
 package com.tutorials.ninja.qa.testcases;
 
 import java.util.ArrayList;
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -18,7 +17,6 @@ import com.tutorials.ninja.qa.testpages.LogoutPage;
 import com.tutorials.ninja.qa.utils.Utilities;
 
 public class LoginTest extends TestBase {
-	
 
 	public LoginTest() throws Exception {
 		super();
@@ -32,16 +30,13 @@ public class LoginTest extends TestBase {
 	public static LogoutPage logoutpage;
 	public static Actions action;
 
-	
-
-
 	@BeforeMethod
 	public void setUp() {
-		driver = initializeBrowserAndOpenApplication(configProp.getProperty("browserName"));
+		driver = initializeBrowserAndOpenApplication(prop.getProperty("browserName"));
 		landingpage = new LandingPage(driver);
 		landingpage.clickOnMyAccountLink();
 		landingpage.clickOnLoginLink();
-		
+
 	}
 
 	@Test(priority = 1, dataProvider = "TutorialsNinjaDataProviderSupply", dataProviderClass = SupplyTestDataFromExcel.class)
@@ -50,10 +45,11 @@ public class LoginTest extends TestBase {
 		insideofloginpage = new InsideOfLoginPage(driver);
 		loginpage.enterEmailId(username);
 		loginpage.enterPassword(password);
-		loginpage.clickOnLoginButton();	
+		loginpage.clickOnLoginButton();
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
-		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
-		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
+				"Edit your account information is not displayed");
 		softassert.assertAll();
 
 	}
@@ -62,14 +58,12 @@ public class LoginTest extends TestBase {
 	public void verifyLoginUsingInvalidCredentials_002() {
 		loginpage = new LoginPage(driver);
 		loginpage.enterEmailId(Utilities.generateEmailWithTimeStamp());
-		loginpage.enterPassword(Utilities.generatePasswordWithTimeStamp());
+		loginpage.enterPassword(Utilities.generatePassword(14));
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
-
-
 
 	}
 
@@ -77,10 +71,10 @@ public class LoginTest extends TestBase {
 	public void verifyLoginUsingInvalidEmailandValidPassword_003() {
 		loginpage = new LoginPage(driver);
 		loginpage.enterEmailId(Utilities.generateEmailWithTimeStamp());
-		loginpage.enterPassword(configProp.getProperty("validPassword"));
+		loginpage.enterPassword(prop.getProperty("validPassword"));
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 	}
@@ -88,11 +82,11 @@ public class LoginTest extends TestBase {
 	@Test(priority = 4)
 	public void verifyLoginUsingValidEmailandInvalidPassword_004() {
 		loginpage = new LoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(Utilities.generatePasswordWithTimeStamp());
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(Utilities.generatePassword(14));
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 	}
@@ -100,10 +94,10 @@ public class LoginTest extends TestBase {
 	@Test(priority = 5)
 	public void verifyLoginUsingBlankEmailandValidPassword_005() {
 		loginpage = new LoginPage(driver);
-		loginpage.enterPassword(configProp.getProperty("validPassword"));
+		loginpage.enterPassword(prop.getProperty("validPassword"));
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 
@@ -112,10 +106,10 @@ public class LoginTest extends TestBase {
 	@Test(priority = 6)
 	public void verifyLoginUsingValidEmailandBlankPassword_006() {
 		loginpage = new LoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 
@@ -126,7 +120,7 @@ public class LoginTest extends TestBase {
 		loginpage = new LoginPage(driver);
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 
@@ -134,25 +128,24 @@ public class LoginTest extends TestBase {
 
 	@Test(priority = 8)
 	public void verifyLoginUsingInactiveCredentials_008() {
-		
+
 		loginpage = new LoginPage(driver);
-		loginpage.enterEmailId(testDataProp.getProperty("inactiveUserName"));
-		loginpage.enterPassword(testDataProp.getProperty("inactivePassword"));
+		loginpage.enterEmailId(dataProp.getProperty("inactiveUserName"));
+		loginpage.enterPassword(dataProp.getProperty("inactivePassword"));
 		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 
 	}
-
 
 	@Test(priority = 9)
 	public void verifyWorkingOfForgetPasswordLink_009() {
 		loginpage = new LoginPage(driver);
 		loginpage.clickOnForgottenPasswordLink();
 		String actualWarningMessage = loginpage.validateForgottenPasswordPage();
-		String expectedWarningMessage = testDataProp.getProperty("validateForgetPasswordPage");
+		String expectedWarningMessage = dataProp.getProperty("validateForgetPasswordPage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 	}
@@ -161,12 +154,13 @@ public class LoginTest extends TestBase {
 	public void verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut_010() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword"));
-		loginpage.clickOnLoginButton();	
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(prop.getProperty("validPassword"));
+		loginpage.clickOnLoginButton();
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
-		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
-		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
+				"Edit your account information is not displayed");
 		softassert.assertAll();
 		driver.navigate().back();
 
@@ -179,22 +173,23 @@ public class LoginTest extends TestBase {
 //		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
 //		String actualWarningMessage = (driver.findElement(By.cssSelector(".alert.alert-danger.alert-dismissible"))
 //				.getText());
-//		String expectedWarningMessage = testDataProp.getProperty("warningMessageForUnsuccessfulLoginAttempt");
+//		String expectedWarningMessage = dataProp.getProperty("warningMessageForUnsuccessfulLoginAttempt");
 //		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 //		softassert.assertAll();
 //
 //	}
 
 	@Test(priority = 12)
-	public void verifyNavigationToDifferentPagesFromLoginPage_011(){
+	public void verifyNavigationToDifferentPagesFromLoginPage_011() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword"));
-		loginpage.clickOnLoginButton();	
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(prop.getProperty("validPassword"));
+		loginpage.clickOnLoginButton();
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
-		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
-		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
+				"Edit your account information is not displayed");
 		softassert.assertAll();
 		insideofloginpage.clickOnPhonesAndPDAsButton();
 		driver.navigate().back();
@@ -204,10 +199,10 @@ public class LoginTest extends TestBase {
 	@Test(priority = 13)
 	public void verifyOpeningOfLoginPageInANewTab_012() {
 		action = new Actions(driver);
-		action.keyDown(Keys.CONTROL).moveToElement(landingpage.clickOnLoginLink()).click().perform();;
+		action.keyDown(Keys.CONTROL).moveToElement(landingpage.clickOnLoginLink()).click().perform();
+		;
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
-
 
 	}
 
@@ -223,32 +218,34 @@ public class LoginTest extends TestBase {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
 		logoutpage = new LogoutPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword"));
-		loginpage.clickOnLoginButton();	
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(prop.getProperty("validPassword"));
+		loginpage.clickOnLoginButton();
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
-		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
-		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
+				"Edit your account information is not displayed");
 		insideofloginpage.clickOnLogoutButton();
 		String actualMessageForLogout = logoutpage.retrieveLogoutValidationMessage();
-		String expectedMessageForLogout = testDataProp.getProperty("validateLogout");
-		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),"Logout confirmation text does not match");
+		String expectedMessageForLogout = dataProp.getProperty("validateLogout");
+		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),
+				"Logout confirmation text does not match");
 		softassert.assertAll();
 
 	}
 
 //	@Test(priority = 16)
 //	public void verifyLoginWithNewPasswordRightAfterUpdatingThePassword() {
-//		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-//		driver.findElement(By.id("input-password")).sendKeys("Selenium@278");
+//		driver.findElement(By.id("input-email")).sendKeys("rafiasultana419@gmail.com");
+//		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
 //		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
 //		String actualMessageForLogin = (driver.findElement(By.linkText("Edit your account information")).getText());
-//		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
+//		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
 //		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
 //				"Edit your account information is not displayed");
 //		driver.findElement(By.linkText("Change your password")).click();
-//		driver.findElement(By.id("input-password")).sendKeys("Selenium@11278");
-//		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@11278");
+//		driver.findElement(By.id("input-password")).sendKeys(Utilities.generatePassword(14));
+//		driver.findElement(By.id("input-confirm")).sendKeys(Utilities.generatePassword(14));
 //		driver.findElement(By.cssSelector(".btn.btn-primary")).click();
 //		String actualMessage1 = (driver.findElement(By.cssSelector(".alert.alert-success.alert-dismissible"))
 //				.getText());
@@ -258,16 +255,16 @@ public class LoginTest extends TestBase {
 //		String actualMessageForLogout = (driver.findElement(By.xpath(
 //				"//p[contains(text(),'You have been logged off your account. It is now safe to leave the computer.')]"))
 //				.getText());
-//		String expectedMessageForLogout = testDataProp.getProperty("validateLogout");
+//		String expectedMessageForLogout = dataProp.getProperty("validateLogout");
 //		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),
 //				"Logout confirmation text does not match");
 //		driver.findElement(By.linkText("My Account")).click();
 //		driver.findElement(By.linkText("Login")).click();
 //		driver.findElement(By.id("input-email")).sendKeys("johnsmith20@gmail.com");
-//		driver.findElement(By.id("input-password")).sendKeys("Selenium@11278");
+//		driver.findElement(By.id("input-password")).sendKeys(Utilities.generatePassword(14));
 //		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
 //		String actualMessage2 = (driver.findElement(By.linkText("Edit your account information")).getText());
-//		String expectedMessage2 = testDataProp.getProperty("validateLogin");
+//		String expectedMessage2 = dataProp.getProperty("validateLogin");
 //		softassert.assertTrue(actualMessage2.contains(expectedMessage2), "Edit your account is not displayed");
 //		softassert.assertAll();
 //
@@ -277,32 +274,33 @@ public class LoginTest extends TestBase {
 	public void verifyLoginPressingTheEnterKeyOfKeyboard_015() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword")).sendKeys(Keys.ENTER);
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(prop.getProperty("validPassword")).sendKeys(Keys.ENTER);
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
-		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
-		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
+				"Edit your account information is not displayed");
 		softassert.assertAll();
 
 	}
 
 	@Test(priority = 18)
-	public void verifyTabKeyofTheKeyboardWorksOnLoginPage_016() {		
+	public void verifyTabKeyofTheKeyboardWorksOnLoginPage_016() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword")).sendKeys(Keys.TAB.TAB.ENTER);
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(prop.getProperty("validPassword")).sendKeys(Keys.TAB.TAB.ENTER);
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
-		String expectedMessageForLogin = testDataProp.getProperty("validateLogin");
-		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),"Edit your account information is not displayed");
+		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
+		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
+				"Edit your account information is not displayed");
 		softassert.assertAll();
-				
+
 	}
 
-	@Test(priority = 19)
-	public void verifyCopyAndPasteOfPasswordIsDisabled() {
-		
-		
+//	@Test(priority = 19)
+//	public void verifyCopyAndPasteOfPasswordIsDisabled() {
+//
 //		WebElement password = driver.findElement(By.id("input-password"));
 //		password.sendKeys(Utilities.generatePasswordWithTimeStamp());
 //		password.sendKeys(Keys.CONTROL + "a");
@@ -311,54 +309,52 @@ public class LoginTest extends TestBase {
 //		WebElement login = driver.findElement(By.id("input-email"));
 //		Thread.sleep(2000);
 //		login.sendKeys(Keys.CONTROL + "v");
-
+//
 //		driver.findElement(By.id("input-email")).sendKeys("riftarafia@gmail.com");
 //		driver.findElement(By.id("input-password")).sendKeys("rafiasultana");
 //		String passwordRetrieve = driver.findElement(By.id("input-password")).getAttribute("value");
 //		System.out.println(passwordRetrieve);
-		
-		
-		
-	}
-	
+//
+//	}
+
 	@Test(priority = 20)
 	public void verifyNavigationTOcommandInLoginPage_017() {
-		driver.navigate().to(testDataProp.getProperty("googleURL"));
+		driver.navigate().to(dataProp.getProperty("googleURL"));
 	}
-	
+
 	@Test(priority = 21)
 	public void verifyNavigationBACKcommandInLoginPage_018() {
 		loginpage = new LoginPage(driver);
-		driver.navigate().to(testDataProp.getProperty("googleURL"));
+		driver.navigate().to(dataProp.getProperty("googleURL"));
 		driver.navigate().back();
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));	
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
 	}
 
 	@Test(priority = 22)
 	public void verifyNavigationFORWARDcommandOfLoginPage_019() {
-		loginpage = new LoginPage(driver);		
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
+		loginpage = new LoginPage(driver);
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
 		driver.navigate().back();
-		driver.navigate().forward();	
+		driver.navigate().forward();
 	}
-	
+
 	@Test(priority = 21)
 	public void verifyNavigationREFRESHcommandInLoginPage_020() {
 		loginpage = new LoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));	
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
 		driver.navigate().refresh();
-		
+
 	}
-	
+
 	@Test(priority = 22)
 	public void verifyWorkingOfBackspaceKeyOnLoginPage_021() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
-		loginpage.enterEmailId(configProp.getProperty("validUserName"));
-		loginpage.enterPassword(configProp.getProperty("validPassword")).sendKeys(Keys.BACK_SPACE);
-		loginpage.clickOnLoginButton();	
+		loginpage.enterEmailId(prop.getProperty("validUserName"));
+		loginpage.enterPassword(prop.getProperty("validPassword")).sendKeys(Keys.BACK_SPACE);
+		loginpage.clickOnLoginButton();
 		String actualWarningMessage = loginpage.retrieveWarningMessageInfoDisplayedOrNot();
-		String expectedWarningMessage = testDataProp.getProperty("warningMessage");
+		String expectedWarningMessage = dataProp.getProperty("warningMessage");
 		softassert.assertTrue(actualWarningMessage.contains(expectedWarningMessage), "Warning Message Does Not Match");
 		softassert.assertAll();
 
