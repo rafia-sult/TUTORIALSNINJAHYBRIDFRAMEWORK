@@ -45,7 +45,7 @@ public class RegisterTest extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void verifyRegisterAnAccountWithMandatoryFields() {
+	public void verifyRegisterAnAccountWithOnlyMandatoryFields() {
 		registerpage = new RegisterPage(driver);
 		registerpage.enterFirstName(dataProp.getProperty("firstName"));
 		registerpage.enterLastName(dataProp.getProperty("lastName"));
@@ -471,7 +471,7 @@ public class RegisterTest extends TestBase {
 		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
 				"Edit your account information is not displayed");
 		insideofloginpage.clickOnLogoutButton();
-		String actualMessageForLogout = logoutpage.retrieveLogoutValidationMessage();
+		String actualMessageForLogout = logoutpage.logoutValidationMessageDisplayedOrNot();
 		String expectedMessageForLogout = dataProp.getProperty("validateLogout");
 		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),
 				"Logout confirmation text does not match");
@@ -552,7 +552,29 @@ public class RegisterTest extends TestBase {
 		registerpage.enterTelephone(Utilities.generatePhoneNumber(11));
 		registerpage.enterPassword(prop.getProperty("validPassword"));
 		registerpage.enterConfirmPassword(prop.getProperty("validPassword"));
+		registerpage.clickOnPrivacyPolicyButton();
 		driver.navigate().refresh();
+	}
+
+	@Test(priority = 31)
+	public void verifyWorkingOfTABkeyOfKeyBoardInRegistrationPage() {
+		registerpage = new RegisterPage(driver);
+		registrationsuccesspage = new RegistrationSuccessPage(driver);
+		insideofloginpage = new InsideOfLoginPage(driver);
+		registerpage.enterFirstName(dataProp.getProperty("firstName")).sendKeys(Keys.TAB,
+				dataProp.getProperty("lastName"));
+		registerpage.enterEmail(Utilities.generateEmailWithTimeStamp());
+		registerpage.enterTelephone(Utilities.generatePhoneNumber(11));
+		registerpage.enterPassword(prop.getProperty("validPassword")).sendKeys(Keys.TAB,
+				prop.getProperty("validPassword"));
+		registerpage.clickOnPrivacyPolicyButton();
+		registerpage.clickOnContinueButton();
+		String actualMessageForRegister = registerpage.successfullyRegisteredMessageIsDisplayedOrNot();
+		String expectedMessageForRegister = dataProp.getProperty("successfullyRegisteredVerifyMessage");
+		softassert.assertTrue(actualMessageForRegister.contains(expectedMessageForRegister),
+				"Validation for registering account does not match");
+		softassert.assertAll();
+
 	}
 
 	@AfterMethod

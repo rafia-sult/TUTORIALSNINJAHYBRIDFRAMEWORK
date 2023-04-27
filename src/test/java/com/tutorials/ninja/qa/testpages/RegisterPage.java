@@ -39,39 +39,35 @@ public class RegisterPage {
 	@FindBy(xpath = "//h1[contains(text(),'Your Account Has Been Created!')]")
 	private WebElement successfullyRegisteredMessage;
 
-
 	@FindBy(xpath = "//div[contains(text(),'First Name must be between 1 and 32 characters!')]")
 	private WebElement warningMessageForMissingFirstName;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Last Name must be between 1 and 32 characters!')]")
 	private WebElement warningMessageForMissingLastName;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'E-Mail Address does not appear to be valid!')]")
 	private WebElement warningMessageForMissingEmail;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Telephone must be between 3 and 32 characters!')]")
 	private WebElement warningMessageForMissingPhoneNumber;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Password must be between 4 and 20 characters!')]")
 	private WebElement warningMessageForMissingPassword;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Password confirmation does not match password!')]")
 	private WebElement warningMessageForMissingConfirmPassword;
-	
-	@FindBy (css = ".alert.alert-danger.alert-dismissible")
+
+	@FindBy(css = ".alert.alert-danger.alert-dismissible")
 	private WebElement warningMessageForNotCheckingPrivacyPolicyButton;
-	
+
 	@FindBy(css = ".alert.alert-danger.alert-dismissible")
 	private WebElement warningMessageForExistingEmail;
-	
-	
-	
+
 // -----------------------------------------------------------------------
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
 
 // ------------------------------------------------------------------------
 
@@ -93,12 +89,14 @@ public class RegisterPage {
 		telephoneTextBox.sendKeys(telephone);
 	}
 
-	public void enterPassword(String password) {
+	public WebElement enterPassword(String password) {
 		passwordTextBox.sendKeys(password);
+		return passwordTextBox;
 	}
 
-	public void enterConfirmPassword(String confirmPassword) {
+	public WebElement enterConfirmPassword(String confirmPassword) {
 		confirmPasswordTextBox.sendKeys(confirmPassword);
+		return confirmPasswordTextBox;
 	}
 
 	public void clickOnSubscribeButton() {
@@ -118,7 +116,7 @@ public class RegisterPage {
 		String displayStatus = successfullyRegisteredMessage.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForFirstNameDisplayedOrNot() {
 		String displayStatus = warningMessageForMissingFirstName.getText();
 		return displayStatus;
@@ -128,32 +126,32 @@ public class RegisterPage {
 		String displayStatus = warningMessageForMissingLastName.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForEmailDisplayedOrNot() {
 		String displayStatus = warningMessageForMissingEmail.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForTelephoneDisplayedOrNot() {
 		String displayStatus = warningMessageForMissingPhoneNumber.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForPasswordDisplayedOrNot() {
 		String displayStatus = warningMessageForMissingPassword.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForConfirmPasswordDisplayedOrNot() {
 		String displayStatus = warningMessageForMissingConfirmPassword.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForPrivacyPolicyDisplayedOrNot() {
 		String displayStatus = warningMessageForNotCheckingPrivacyPolicyButton.getText();
 		return displayStatus;
 	}
-	
+
 	public String warningMessageForExistingEmailDisplayedOrNot() {
 		String displayStatus = warningMessageForExistingEmail.getText();
 		return displayStatus;

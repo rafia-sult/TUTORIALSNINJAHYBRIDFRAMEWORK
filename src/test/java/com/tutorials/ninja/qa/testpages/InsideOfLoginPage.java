@@ -24,6 +24,21 @@ public class InsideOfLoginPage {
 	@FindBy(linkText = "Logout")
 	private WebElement logoutButton;
 
+	@FindBy(linkText = "Change your password")
+	private WebElement changeYourPassword;
+
+	@FindBy(id = "input-password")
+	private WebElement changePassword;
+
+	@FindBy(id = "input-confirm")
+	private WebElement confirmChangePassword;
+
+	@FindBy(css = ".btn.btn-primary")
+	private WebElement continueButton;
+
+	@FindBy(css = ".alert.alert-success.alert-dismissible")
+	private WebElement updatingPasswordAlert;
+
 	public InsideOfLoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -31,6 +46,11 @@ public class InsideOfLoginPage {
 
 	public String editYourAccountInfoDisplayedOrNot() {
 		String displayStatus = validateLoginText.getText();
+		return displayStatus;
+	}
+
+	public String updatingPasswordAlertDisplayedOrNot() {
+		String displayStatus = updatingPasswordAlert.getText();
 		return displayStatus;
 	}
 
@@ -51,6 +71,24 @@ public class InsideOfLoginPage {
 
 	public void clickOnLogoutButton() {
 		logoutButton.click();
+	}
+
+	public void clickOnChangeYourPassword() {
+		changeYourPassword.click();
+	}
+
+	public WebElement clickOnPassword(String changePasswordBox) {
+		changePassword.sendKeys(changePasswordBox);
+		return changePassword;
+	}
+
+	public WebElement clickOnPasswordConfirm(String confirmPasswordBox) {
+		confirmChangePassword.sendKeys(confirmPasswordBox);
+		return confirmChangePassword;
+	}
+
+	public void clickOnContinueButton() {
+		continueButton.click();
 	}
 
 }

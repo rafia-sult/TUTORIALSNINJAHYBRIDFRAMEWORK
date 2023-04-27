@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="20" total="21" passed="1" failed="0" skipped="0">
+<testng-results ignored="30" total="31" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-26T21:49:26 EDT" name="Default suite" finished-at="2023-04-26T21:49:35 EDT" duration-ms="9442">
+  <suite started-at="2023-04-27T02:16:50 EDT" name="Default suite" finished-at="2023-04-27T02:17:00 EDT" duration-ms="10189">
     <groups>
     </groups>
-    <test started-at="2023-04-26T21:49:26 EDT" name="Default test" finished-at="2023-04-26T21:49:35 EDT" duration-ms="9442">
-      <class name="com.tutorials.ninja.qa.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@117159c0]" started-at="2023-04-26T21:49:26 EDT" name="setUp" finished-at="2023-04-26T21:49:34 EDT" duration-ms="7994" status="PASS">
+    <test started-at="2023-04-27T02:16:50 EDT" name="Default test" finished-at="2023-04-27T02:17:00 EDT" duration-ms="10189">
+      <class name="com.tutorials.ninja.qa.testcases.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@74d1dc36]" started-at="2023-04-27T02:16:50 EDT" name="setUp" finished-at="2023-04-27T02:16:59 EDT" duration-ms="8347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyTabKeyofTheKeyboardWorksOnLoginPage_016()[pri:17, instance:com.tutorials.ninja.qa.testcases.LoginTest@117159c0]" started-at="2023-04-26T21:49:34 EDT" name="verifyTabKeyofTheKeyboardWorksOnLoginPage_016" finished-at="2023-04-26T21:49:35 EDT" duration-ms="1182" status="PASS">
+        <test-method signature="verifyRegistrationUsingTABkeyOfKeyBoard()[pri:31, instance:com.tutorials.ninja.qa.testcases.RegisterTest@74d1dc36]" started-at="2023-04-27T02:16:59 EDT" name="verifyRegistrationUsingTABkeyOfKeyBoard" finished-at="2023-04-27T02:17:00 EDT" duration-ms="1554" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTabKeyofTheKeyboardWorksOnLoginPage_016 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@117159c0]" started-at="2023-04-26T21:49:35 EDT" name="tearDown" finished-at="2023-04-26T21:49:35 EDT" duration-ms="193" status="PASS">
+        </test-method> <!-- verifyRegistrationUsingTABkeyOfKeyBoard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@74d1dc36]" started-at="2023-04-27T02:17:00 EDT" name="tearDown" finished-at="2023-04-27T02:17:00 EDT" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.tutorials.ninja.qa.testcases.LoginTest -->
+      </class> <!-- com.tutorials.ninja.qa.testcases.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

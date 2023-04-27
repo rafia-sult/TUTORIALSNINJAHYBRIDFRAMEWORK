@@ -1,6 +1,5 @@
 package com.tutorials.ninja.qa.testcases;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,7 +13,6 @@ import com.tutorials.ninja.qa.testpages.InsideOfLoginPage;
 import com.tutorials.ninja.qa.testpages.LandingPage;
 import com.tutorials.ninja.qa.testpages.LoginPage;
 import com.tutorials.ninja.qa.testpages.LogoutPage;
-import com.tutorials.ninja.qa.testpages.RegisterPage;
 import com.tutorials.ninja.qa.testpages.SearchPage;
 
 public class SearchProductTest extends TestBase {
@@ -133,7 +131,7 @@ public class SearchProductTest extends TestBase {
 				"Search criteria does not match");
 		landingpage.clickOnMyAccountLink();
 		insideofloginpage.clickOnLogoutButton();
-		String actualMessageForLogout = logoutpage.retrieveLogoutValidationMessage();
+		String actualMessageForLogout = logoutpage.logoutValidationMessageDisplayedOrNot();
 		String expectedMessageForLogout = dataProp.getProperty("validateLogout");
 		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),
 				"Logout confirmation text does not match");
@@ -267,7 +265,7 @@ public class SearchProductTest extends TestBase {
 		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
 				"Edit your account information is not displayed");
 		insideofloginpage.clickOnLogoutButton();
-		String actualMessageForLogout = logoutpage.retrieveLogoutValidationMessage();
+		String actualMessageForLogout = logoutpage.logoutValidationMessageDisplayedOrNot();
 		String expectedMessageForLogout = dataProp.getProperty("validateLogout");
 		softassert.assertTrue(actualMessageForLogout.contains(expectedMessageForLogout),
 				"Logout confirmation text does not match");

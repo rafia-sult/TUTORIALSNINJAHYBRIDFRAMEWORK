@@ -6,10 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+
 	public WebDriver driver;
 
 	@FindBy(id = "input-email")
-	private WebElement emailIdTextBox;
+	public WebElement emailIdTextBox;
 
 	@FindBy(id = "input-password")
 	private WebElement passwordTextBox;
@@ -26,14 +27,18 @@ public class LoginPage {
 	@FindBy(xpath = "//p[contains(text(),'Enter the e-mail address associated with your account. Click submit to have a password reset link e-mailed to you.')]")
 	private WebElement validateForgetPasswordPage;
 
+	@FindBy(css = ".alert.alert-danger.alert-dismissible")
+	private WebElement unsuccessfulLoginAttempMessage;
+
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
 
-	public void enterEmailId(String emailIdText) {
+	public WebElement enterEmailId(String emailIdText) {
 		emailIdTextBox.sendKeys(emailIdText);
+		return emailIdTextBox;
 	}
 
 	public WebElement enterPassword(String passwordText) {
@@ -59,4 +64,8 @@ public class LoginPage {
 		return displayStatus;
 	}
 
+	public String unsuccessfulLoginAttempMessageDisplayedOrNot() {
+		String displayStatus = unsuccessfulLoginAttempMessage.getText();
+		return displayStatus;
+	}
 }

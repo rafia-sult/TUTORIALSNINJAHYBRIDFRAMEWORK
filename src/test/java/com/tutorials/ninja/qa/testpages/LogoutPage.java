@@ -18,7 +18,7 @@ public class LogoutPage {
 
 	}
 	
-	public String retrieveLogoutValidationMessage() {
+	public String logoutValidationMessageDisplayedOrNot() {
 		String displayStatus = logoutValidationMessage.getText();
 		return displayStatus;
 	}
