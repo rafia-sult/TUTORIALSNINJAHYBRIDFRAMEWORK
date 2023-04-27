@@ -18,11 +18,10 @@ public class SupplyTestDataFromExcel {
 	@DataProvider(name = "TutorialsNinjaDataProviderSupply")
 	public static Object[][] dataSupplyFrom2DimensionalObjectArray() {
 
-		Object[][] data = { { "rafiasultana12345@gmail.com", "Selenium@123" },
-							{ "rafiasultana122@yahoo.com", "Selenium@123" },
-							{ "ss123456@gmail.com", "sharmin@123" },
-							{ "rashidmohammed@yahoo.com", "mohammed@123"}, 
-							{"akhterrashida@gmail.com", "rashida@123" } };
+		Object[][] data = { { "rafselenium1@gmail.com", "Selenium@123" },
+							{ "rafselenium2@gmail.com", "Selenium@123" },
+							{ "rafselenium3@yahoo.com", "Selenium@123" },
+							{ "rafselenium4@yahoo.com", "Selenium@123"}};
 
 		return data;
 	}

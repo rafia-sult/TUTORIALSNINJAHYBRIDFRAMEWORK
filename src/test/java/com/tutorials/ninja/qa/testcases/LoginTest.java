@@ -1,13 +1,16 @@
 package com.tutorials.ninja.qa.testcases;
 
 import java.util.ArrayList;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
 import com.tutorials.ninja.qa.testbase.TestBase;
 import com.tutorials.ninja.qa.testdata.SupplyTestDataFromExcel;
 import com.tutorials.ninja.qa.testpages.InsideOfLoginPage;
@@ -236,13 +239,16 @@ public class LoginTest extends TestBase {
 
 //	@Test(priority = 16)
 //	public void verifyLoginWithNewPasswordRightAfterUpdatingThePassword() {
-//		driver.findElement(By.id("input-email")).sendKeys("rafiasultana419@gmail.com");
-//		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
-//		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
-//		String actualMessageForLogin = (driver.findElement(By.linkText("Edit your account information")).getText());
+//		loginpage = new LoginPage(driver);
+//		insideofloginpage = new InsideOfLoginPage(driver);
+//		loginpage.enterEmailId(prop.getProperty("validUserName"));
+//		loginpage.enterPassword(prop.getProperty("validPassword"));
+//		loginpage.clickOnLoginButton();
+//		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
 //		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
 //		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
 //				"Edit your account information is not displayed");
+//		
 //		driver.findElement(By.linkText("Change your password")).click();
 //		driver.findElement(By.id("input-password")).sendKeys(Utilities.generatePassword(14));
 //		driver.findElement(By.id("input-confirm")).sendKeys(Utilities.generatePassword(14));
@@ -270,7 +276,7 @@ public class LoginTest extends TestBase {
 //
 //	}
 
-	@Test(priority = 17)
+	@Test(priority = 16)
 	public void verifyLoginPressingTheEnterKeyOfKeyboard_015() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
@@ -284,12 +290,12 @@ public class LoginTest extends TestBase {
 
 	}
 
-	@Test(priority = 18)
+	@Test(priority = 17)
 	public void verifyTabKeyofTheKeyboardWorksOnLoginPage_016() {
 		loginpage = new LoginPage(driver);
 		insideofloginpage = new InsideOfLoginPage(driver);
 		loginpage.enterEmailId(prop.getProperty("validUserName"));
-		loginpage.enterPassword(prop.getProperty("validPassword")).sendKeys(Keys.TAB.TAB.ENTER);
+		loginpage.enterPassword(prop.getProperty("validPassword")).sendKeys(Keys.TAB.ENTER);
 		String actualMessageForLogin = insideofloginpage.editYourAccountInfoDisplayedOrNot();
 		String expectedMessageForLogin = dataProp.getProperty("validateLogin");
 		softassert.assertTrue(actualMessageForLogin.contains(expectedMessageForLogin),
@@ -317,12 +323,12 @@ public class LoginTest extends TestBase {
 //
 //	}
 
-	@Test(priority = 20)
+	@Test(priority = 18)
 	public void verifyNavigationTOcommandInLoginPage_017() {
 		driver.navigate().to(dataProp.getProperty("googleURL"));
 	}
 
-	@Test(priority = 21)
+	@Test(priority = 19)
 	public void verifyNavigationBACKcommandInLoginPage_018() {
 		loginpage = new LoginPage(driver);
 		driver.navigate().to(dataProp.getProperty("googleURL"));
@@ -330,7 +336,7 @@ public class LoginTest extends TestBase {
 		loginpage.enterEmailId(prop.getProperty("validUserName"));
 	}
 
-	@Test(priority = 22)
+	@Test(priority = 20)
 	public void verifyNavigationFORWARDcommandOfLoginPage_019() {
 		loginpage = new LoginPage(driver);
 		loginpage.enterEmailId(prop.getProperty("validUserName"));
