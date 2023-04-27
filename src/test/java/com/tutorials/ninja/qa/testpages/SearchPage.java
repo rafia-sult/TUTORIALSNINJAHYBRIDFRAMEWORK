@@ -155,7 +155,6 @@ public class SearchPage {
 	@FindBy(xpath = "//h2[contains(text(),'MP3 Players')]")
 	private WebElement verifyShowAllMP3Players;
 
-	
 	public SearchPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);

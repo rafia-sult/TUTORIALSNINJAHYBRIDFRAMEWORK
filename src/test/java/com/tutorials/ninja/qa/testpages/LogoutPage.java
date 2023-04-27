@@ -17,7 +17,7 @@ public class LogoutPage {
 		PageFactory.initElements(driver, this);
 
 	}
-	
+
 	public String logoutValidationMessageDisplayedOrNot() {
 		String displayStatus = logoutValidationMessage.getText();
 		return displayStatus;

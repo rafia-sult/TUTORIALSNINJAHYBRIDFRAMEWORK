@@ -63,13 +63,10 @@ public class RegisterPage {
 	@FindBy(css = ".alert.alert-danger.alert-dismissible")
 	private WebElement warningMessageForExistingEmail;
 
-// -----------------------------------------------------------------------
 	public RegisterPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
-// ------------------------------------------------------------------------
 
 	public WebElement enterFirstName(String firstName) {
 		firstNameTextBox.sendKeys(firstName);

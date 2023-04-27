@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 public class LandingPage {
 	public WebDriver driver;
 
-	// Objects
 	@FindBy(xpath = "//span[text()='My Account']")
 	private WebElement myAccountLink;
 
@@ -20,17 +19,13 @@ public class LandingPage {
 
 	@FindBy(name = "search")
 	private WebElement searchButton;
-	
 
-
-	// create a constructor
 	public LandingPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 
 	}
 
-	// action
 	public void clickOnMyAccountLink() {
 		myAccountLink.click();
 	}
@@ -40,7 +35,6 @@ public class LandingPage {
 		return loginLink;
 	}
 
-	
 	public WebElement clickOnRegisterLink() {
 		registerLink.click();
 		return registerLink;
@@ -49,7 +43,5 @@ public class LandingPage {
 	public void clickOnSearchButton() {
 		searchButton.click();
 	}
-	
-
 
 }
