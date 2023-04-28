@@ -166,10 +166,10 @@ public class LoginTest extends TestBase {
 
 	}
 
-	@Test(priority = 11, invocationCount = 8)
+	@Test(priority = 11, invocationCount = 6)
 	public void verifyNumberOfUnsuccessfulLoginAttempts() {
 		loginpage = new LoginPage(driver);
-		loginpage.enterEmailId(prop.getProperty("unsuccessfulLoginAttempEmail"));
+		loginpage.enterEmailId(dataProp.getProperty("unsuccessfulLoginAttempEmail"));
 		loginpage.enterPassword(dataProp.getProperty("invalidPassword"));
 		loginpage.clickOnLoginButton();
 		String actualMessageForLogin = loginpage.unsuccessfulLoginAttempMessageDisplayedOrNot();
@@ -394,6 +394,7 @@ public class LoginTest extends TestBase {
 				"Edit your account information is not displayed");
 		softassert.assertAll();
 	}
+
 
 	@AfterMethod
 	public void tearDown() {

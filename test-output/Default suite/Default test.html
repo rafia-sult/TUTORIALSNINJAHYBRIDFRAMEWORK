@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>27/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>38/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 27 14:20:28 EDT 2023</td>
+<td>Started on:</td><td>Thu Apr 27 20:49:23 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>231 seconds (231564 ms)</td>
+<tr><td>Total time:</td><td>234 seconds (234157 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,798 +67,203 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace190704044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace190704044'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace435070844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace435070844'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1232461217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1232461217'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace496259008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace496259008'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1990419108", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1990419108'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace591902639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace591902639'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1373172466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1373172466'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts()'><b>verifyNumberOfUnsuccessfulLoginAttempts</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1871838170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1871838170'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-	at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-	at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingInvalidEmailandValidPassword()'><b>verifyLoginUsingInvalidEmailandValidPassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnCamerasLink()'><b>verifyClickingOnCamerasLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyUpdatingThePassword()'><b>verifyUpdatingThePassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsLink()'><b>verifyClickingOnComponentsLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsSublinkMiceAndTrackballs()'><b>verifyClickingOnComponentsSublinkMiceAndTrackballs</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsSublinkMonitor()'><b>verifyClickingOnComponentsSublinkMonitor</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsSublinkPrinters()'><b>verifyClickingOnComponentsSublinkPrinters</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsSublinkScanners()'><b>verifyClickingOnComponentsSublinkScanners</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsSublinkShowAllComponents()'><b>verifyClickingOnComponentsSublinkShowAllComponents</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnComponentsSublinkWebCameras()'><b>verifyClickingOnComponentsSublinkWebCameras</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnDesktopsLink()'><b>verifyClickingOnDesktopsLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnDesktopsSublinkMac()'><b>verifyClickingOnDesktopsSublinkMac</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnDesktopsSublinkPC()'><b>verifyClickingOnDesktopsSublinkPC</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>2</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNavigationBACKcommandInLoginPage()'><b>verifyNavigationBACKcommandInLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnDesktopsSublinkShowAllDesktops()'><b>verifyClickingOnDesktopsSublinkShowAllDesktops</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>1</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyTabKeyOfTheKeyboardWorksOnLoginPage()'><b>verifyTabKeyOfTheKeyboardWorksOnLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnLaptopsAndNotebooksLink()'><b>verifyClickingOnLaptopsAndNotebooksLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyOpeningOfLoginPageInANewTab()'><b>verifyOpeningOfLoginPageInANewTab</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnLaptopsAndNotebooksSublinkMacs()'><b>verifyClickingOnLaptopsAndNotebooksSublinkMacs</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyWorkingOfBackspaceKeyOnLoginPage()'><b>verifyWorkingOfBackspaceKeyOnLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnLaptopsAndNotebooksSublinkShowAll()'><b>verifyClickingOnLaptopsAndNotebooksSublinkShowAll</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials()'><b>verifyLoginUsingValidCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest<br>Parameters: rafselenium4@yahoo.com, Selenium@123</td>
-<td></td>
-<td>1</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNavigationFORWARDcommandOfLoginPage()'><b>verifyNavigationFORWARDcommandOfLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnLaptopsAndNotebooksSublinkWindows()'><b>verifyClickingOnLaptopsAndNotebooksSublinkWindows</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidEmailandBlankPassword()'><b>verifyLoginUsingValidEmailandBlankPassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnMP3PlayersLink()'><b>verifyClickingOnMP3PlayersLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginWithNewPasswordAfterUpdatingThePassword()'><b>verifyLoginWithNewPasswordAfterUpdatingThePassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>4</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNavigationToDifferentPagesFromLoginPage()'><b>verifyNavigationToDifferentPagesFromLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>2</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials()'><b>verifyLoginUsingValidCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest<br>Parameters: rafselenium3@yahoo.com, Selenium@123</td>
-<td></td>
-<td>1</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyWorkingOfForgetPasswordLink()'><b>verifyWorkingOfForgetPasswordLink</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnMP3PlayersSublinkShowAllMP3Players()'><b>verifyClickingOnMP3PlayersSublinkShowAllMP3Players</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials()'><b>verifyLoginUsingValidCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest<br>Parameters: rafselenium2@gmail.com, Selenium@123</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnPhonesAndPDAsLink()'><b>verifyClickingOnPhonesAndPDAsLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyOpeningOfLoginPageInANewWindow()'><b>verifyOpeningOfLoginPageInANewWindow</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>1</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginPressingTheEnterKeyOfKeyboard()'><b>verifyLoginPressingTheEnterKeyOfKeyboard</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnSoftwareLink()'><b>verifyClickingOnSoftwareLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidEmailandInvalidPassword()'><b>verifyLoginUsingValidEmailandInvalidPassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyClickingOnTabletsLink()'><b>verifyClickingOnTabletsLink</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials()'><b>verifyLoginUsingValidCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest<br>Parameters: rafselenium1@gmail.com, Selenium@123</td>
-<td></td>
-<td>1</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNavigationTOcommandInLoginPage()'><b>verifyNavigationTOcommandInLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyCorrectResultsAreDisplayedAfterASearch()'><b>verifyCorrectResultsAreDisplayedAfterASearch</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyNavigationREFRESHcommandInLoginPage()'><b>verifyNavigationREFRESHcommandInLoginPage</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingBlankEmailandValidPassword()'><b>verifyLoginUsingBlankEmailandValidPassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingBlankCredentials()'><b>verifyLoginUsingBlankCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingInvalidCredentials()'><b>verifyLoginUsingInvalidCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingInactiveCredentials()'><b>verifyLoginUsingInactiveCredentials</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
-<tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyProperLogoutAfterUpdatingThePassword()'><b>verifyProperLogoutAfterUpdatingThePassword</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyProperLogoutAfterSearchingForProduct()'><b>verifyProperLogoutAfterSearchingForProduct</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>3</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut()'><b>verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchBoxIsClickable()'><b>verifySearchBoxIsClickable</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
 <td>0</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 <tr>
-<td title='com.tutorials.ninja.qa.testcases.LoginTest.verifyProperLogoutAfterLogin()'><b>verifyProperLogoutAfterLogin</b><br>Test class: com.tutorials.ninja.qa.testcases.LoginTest</td>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchByProvidingASearchCriteriaThatResultsInMultipleProducts()'><b>verifySearchByProvidingASearchCriteriaThatResultsInMultipleProducts</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
 <td></td>
-<td>1</td>
-<td>com.tutorials.ninja.qa.testcases.LoginTest@563f38c4</td></tr>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchProductAfterLogin()'><b>verifySearchProductAfterLogin</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>2</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWhenTheSearchTermIsMisspelled()'><b>verifySearchWhenTheSearchTermIsMisspelled</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithANonExistingProductName()'><b>verifySearchWithANonExistingProductName</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithAllLowercase()'><b>verifySearchWithAllLowercase</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithAllUppercase()'><b>verifySearchWithAllUppercase</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithExistingProductName()'><b>verifySearchWithExistingProductName</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithExtraSpacesBetweenLetters()'><b>verifySearchWithExtraSpacesBetweenLetters</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithMixedUppercaseAndlowercase()'><b>verifySearchWithMixedUppercaseAndlowercase</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithSpecialCharacter()'><b>verifySearchWithSpecialCharacter</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchWithoutProvidingAnything()'><b>verifySearchWithoutProvidingAnything</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchingForProductAfterLogout()'><b>verifySearchingForProductAfterLogout</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>3</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifySearchingForProductUsingTheENTERkey()'><b>verifySearchingForProductUsingTheENTERkey</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>0</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
+<tr>
+<td title='com.tutorials.ninja.qa.testcases.SearchProductTest.verifyWorkingOfTABkeyWhenLookingForProducts()'><b>verifyWorkingOfTABkeyWhenLookingForProducts</b><br>Test class: com.tutorials.ninja.qa.testcases.SearchProductTest</td>
+<td></td>
+<td>6</td>
+<td>com.tutorials.ninja.qa.testcases.SearchProductTest@2766ca9d</td></tr>
 </table><p>
 </body>
 </html>

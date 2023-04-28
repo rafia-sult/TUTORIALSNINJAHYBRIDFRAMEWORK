@@ -2,7 +2,6 @@ package com.tutorials.ninja.qa.listeners;
 
 import java.io.File;
 import java.io.IOException;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -81,7 +80,8 @@ public class MyListeners implements ITestListener {
 	@Override
 	public void onFinish(ITestContext context) {
 		System.out.println("Execution of Rediff Project finished");
-        extentReport.flush();
+		extentReport.flush();
+
 	}
 
 	@Override

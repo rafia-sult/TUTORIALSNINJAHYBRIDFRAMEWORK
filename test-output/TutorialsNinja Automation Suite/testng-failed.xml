@@ -1,29 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TutorialsNinja Automation Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.tutorials.ninja.qa.listeners.MyListeners"/>
-  </listeners>
-  <test thread-count="5" name="TutorialsNinja Tests(failed)">
+  <test thread-count="5" name="Tutorials Ninja Test Cases(failed)">
     <classes>
-      <class name="com.tutorials.ninja.qa.testcases.RegisterTest">
+      <class name="com.tutorials.ninja.qa.testcases.LoginTest">
         <methods>
-          <include name="verifyNavigationFORWARDcommandInRegisterPage"/>
-          <include name="verifyBACKSPACEofKeyboardWorksInRegisterPage"/>
           <include name="setUp"/>
-          <include name="verifyOpeningOfRegisterPageInANewWindow"/>
-          <include name="verifyCopyAndPasteWorksOnRegisterPage"/>
-          <include name="verifyNavigationREFRESHcommandInRegisterPage"/>
-          <include name="verifyOpeningOfRegisterPageInANewTab"/>
-          <include name="verifyNavigateTOcommandInRegisterPage"/>
+          <include name="verifyLoginUsingValidCredentials" invocation-numbers="0 1 3"/>
           <include name="tearDown"/>
-          <include name="verifyProperLogoutAfterRegistration"/>
-          <include name="verifyRegisterUsingLessThan3NumbersForTelePhoneNumber"/>
-          <include name="verifyENTERKeyOfKeyboardWorksOnRegistrationPage"/>
-          <include name="verifyNavigateBACKcommandInRegisterPage"/>
-          <include name="verifyLoginAfterRegistration"/>
         </methods>
-      </class> <!-- com.tutorials.ninja.qa.testcases.RegisterTest -->
+      </class> <!-- com.tutorials.ninja.qa.testcases.LoginTest -->
     </classes>
-  </test> <!-- TutorialsNinja Tests(failed) -->
+  </test> <!-- Tutorials Ninja Test Cases(failed) -->
 </suite> <!-- Failed suite [TutorialsNinja Automation Suite] -->

@@ -1,31 +1,679 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="2" failed="16" ignored="0" total="102" passed="84">
   <reporter-output>
   </reporter-output>
-  <suite name="TutorialsNinja Automation Suite" duration-ms="45996" started-at="2023-04-27T23:19:20Z" finished-at="2023-04-27T23:20:06Z">
+  <suite name="TutorialsNinja Automation Suite" duration-ms="679294" started-at="2023-04-27T23:06:45 EDT" finished-at="2023-04-27T23:18:04 EDT">
     <groups>
     </groups>
-    <test name="TutorialsNinja Tests" duration-ms="45996" started-at="2023-04-27T23:19:20Z" finished-at="2023-04-27T23:20:06Z">
+    <test name="Tutorials Ninja Test Cases" duration-ms="679294" started-at="2023-04-27T23:06:45 EDT" finished-at="2023-04-27T23:18:04 EDT">
       <class name="com.tutorials.ninja.qa.testcases.SearchProductTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@31d7b7bf]" name="setUp" is-config="true" duration-ms="5479" started-at="2023-04-27T23:20:00Z" finished-at="2023-04-27T23:20:05Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="5515" started-at="2023-04-27T23:07:49 EDT" finished-at="2023-04-27T23:07:54 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchBoxIsClickable()[pri:1, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@31d7b7bf]" name="verifySearchBoxIsClickable" duration-ms="45" started-at="2023-04-27T23:20:05Z" finished-at="2023-04-27T23:20:05Z">
+        <test-method status="PASS" signature="verifySearchBoxIsClickable()[pri:1, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchBoxIsClickable" duration-ms="17" started-at="2023-04-27T23:07:54 EDT" finished-at="2023-04-27T23:07:54 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBoxIsClickable -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@31d7b7bf]" name="tearDown" is-config="true" duration-ms="618" started-at="2023-04-27T23:20:05Z" finished-at="2023-04-27T23:20:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="612" started-at="2023-04-27T23:07:54 EDT" finished-at="2023-04-27T23:07:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4561" started-at="2023-04-27T23:08:07 EDT" finished-at="2023-04-27T23:08:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithExistingProductName()[pri:2, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithExistingProductName" duration-ms="673" started-at="2023-04-27T23:08:12 EDT" finished-at="2023-04-27T23:08:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithExistingProductName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="587" started-at="2023-04-27T23:08:12 EDT" finished-at="2023-04-27T23:08:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4560" started-at="2023-04-27T23:08:25 EDT" finished-at="2023-04-27T23:08:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithANonExistingProductName()[pri:3, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithANonExistingProductName" duration-ms="473" started-at="2023-04-27T23:08:30 EDT" finished-at="2023-04-27T23:08:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithANonExistingProductName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="591" started-at="2023-04-27T23:08:30 EDT" finished-at="2023-04-27T23:08:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="5615" started-at="2023-04-27T23:08:43 EDT" finished-at="2023-04-27T23:08:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithoutProvidingAnything()[pri:4, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithoutProvidingAnything" duration-ms="411" started-at="2023-04-27T23:08:49 EDT" finished-at="2023-04-27T23:08:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithoutProvidingAnything -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="581" started-at="2023-04-27T23:08:49 EDT" finished-at="2023-04-27T23:08:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4400" started-at="2023-04-27T23:09:02 EDT" finished-at="2023-04-27T23:09:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchProductAfterLogin()[pri:5, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchProductAfterLogin" duration-ms="1945" started-at="2023-04-27T23:09:06 EDT" finished-at="2023-04-27T23:09:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchProductAfterLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:09:08 EDT" finished-at="2023-04-27T23:09:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4301" started-at="2023-04-27T23:09:21 EDT" finished-at="2023-04-27T23:09:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyProperLogoutAfterSearchingForProduct()[pri:6, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyProperLogoutAfterSearchingForProduct" duration-ms="2582" started-at="2023-04-27T23:09:25 EDT" finished-at="2023-04-27T23:09:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProperLogoutAfterSearchingForProduct -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="595" started-at="2023-04-27T23:09:28 EDT" finished-at="2023-04-27T23:09:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4459" started-at="2023-04-27T23:09:41 EDT" finished-at="2023-04-27T23:09:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCorrectResultsAreDisplayedAfterASearch()[pri:7, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyCorrectResultsAreDisplayedAfterASearch" duration-ms="646" started-at="2023-04-27T23:09:45 EDT" finished-at="2023-04-27T23:09:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectResultsAreDisplayedAfterASearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="589" started-at="2023-04-27T23:09:46 EDT" finished-at="2023-04-27T23:09:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4293" started-at="2023-04-27T23:09:59 EDT" finished-at="2023-04-27T23:10:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithSpecialCharacter()[pri:8, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithSpecialCharacter" duration-ms="507" started-at="2023-04-27T23:10:03 EDT" finished-at="2023-04-27T23:10:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithSpecialCharacter -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="595" started-at="2023-04-27T23:10:04 EDT" finished-at="2023-04-27T23:10:04 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="7430" started-at="2023-04-27T23:10:17 EDT" finished-at="2023-04-27T23:10:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWhenTheSearchTermIsMisspelled()[pri:9, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWhenTheSearchTermIsMisspelled" duration-ms="734" started-at="2023-04-27T23:10:24 EDT" finished-at="2023-04-27T23:10:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWhenTheSearchTermIsMisspelled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="596" started-at="2023-04-27T23:10:25 EDT" finished-at="2023-04-27T23:10:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4333" started-at="2023-04-27T23:10:38 EDT" finished-at="2023-04-27T23:10:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchByProvidingASearchCriteriaThatResultsInMultipleProducts()[pri:10, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchByProvidingASearchCriteriaThatResultsInMultipleProducts" duration-ms="684" started-at="2023-04-27T23:10:43 EDT" finished-at="2023-04-27T23:10:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchByProvidingASearchCriteriaThatResultsInMultipleProducts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="577" started-at="2023-04-27T23:10:43 EDT" finished-at="2023-04-27T23:10:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4404" started-at="2023-04-27T23:11:32 EDT" finished-at="2023-04-27T23:11:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithExtraSpacesBetweenLetters()[pri:11, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithExtraSpacesBetweenLetters" duration-ms="754" started-at="2023-04-27T23:11:36 EDT" finished-at="2023-04-27T23:11:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithExtraSpacesBetweenLetters -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="581" started-at="2023-04-27T23:11:37 EDT" finished-at="2023-04-27T23:11:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4311" started-at="2023-04-27T23:11:50 EDT" finished-at="2023-04-27T23:11:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithAllUppercase()[pri:12, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithAllUppercase" duration-ms="648" started-at="2023-04-27T23:11:55 EDT" finished-at="2023-04-27T23:11:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithAllUppercase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="598" started-at="2023-04-27T23:11:55 EDT" finished-at="2023-04-27T23:11:56 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4424" started-at="2023-04-27T23:12:09 EDT" finished-at="2023-04-27T23:12:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithAllLowercase()[pri:13, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithAllLowercase" duration-ms="666" started-at="2023-04-27T23:12:13 EDT" finished-at="2023-04-27T23:12:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithAllLowercase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="590" started-at="2023-04-27T23:12:14 EDT" finished-at="2023-04-27T23:12:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4303" started-at="2023-04-27T23:12:27 EDT" finished-at="2023-04-27T23:12:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchWithMixedUppercaseAndlowercase()[pri:14, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchWithMixedUppercaseAndlowercase" duration-ms="673" started-at="2023-04-27T23:12:31 EDT" finished-at="2023-04-27T23:12:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithMixedUppercaseAndlowercase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="601" started-at="2023-04-27T23:12:32 EDT" finished-at="2023-04-27T23:12:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="5605" started-at="2023-04-27T23:12:46 EDT" finished-at="2023-04-27T23:12:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchingForProductAfterLogout()[pri:15, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchingForProductAfterLogout" duration-ms="2656" started-at="2023-04-27T23:12:51 EDT" finished-at="2023-04-27T23:12:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchingForProductAfterLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="603" started-at="2023-04-27T23:12:54 EDT" finished-at="2023-04-27T23:12:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4289" started-at="2023-04-27T23:13:08 EDT" finished-at="2023-04-27T23:13:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifySearchingForProductUsingTheENTERkey()[pri:16, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifySearchingForProductUsingTheENTERkey" duration-ms="624" started-at="2023-04-27T23:13:13 EDT" finished-at="2023-04-27T23:13:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchingForProductUsingTheENTERkey -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="594" started-at="2023-04-27T23:13:13 EDT" finished-at="2023-04-27T23:13:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4266" started-at="2023-04-27T23:13:28 EDT" finished-at="2023-04-27T23:13:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyWorkingOfTABkeyWhenLookingForProducts()[pri:17, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyWorkingOfTABkeyWhenLookingForProducts" duration-ms="6026" started-at="2023-04-27T23:13:33 EDT" finished-at="2023-04-27T23:13:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingOfTABkeyWhenLookingForProducts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="599" started-at="2023-04-27T23:13:39 EDT" finished-at="2023-04-27T23:13:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4384" started-at="2023-04-27T23:13:55 EDT" finished-at="2023-04-27T23:14:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnDesktopsLink()[pri:18, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnDesktopsLink" duration-ms="83" started-at="2023-04-27T23:14:00 EDT" finished-at="2023-04-27T23:14:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnDesktopsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="608" started-at="2023-04-27T23:14:00 EDT" finished-at="2023-04-27T23:14:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4329" started-at="2023-04-27T23:14:13 EDT" finished-at="2023-04-27T23:14:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnLaptopsAndNotebooksLink()[pri:19, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnLaptopsAndNotebooksLink" duration-ms="89" started-at="2023-04-27T23:14:17 EDT" finished-at="2023-04-27T23:14:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnLaptopsAndNotebooksLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:14:17 EDT" finished-at="2023-04-27T23:14:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4378" started-at="2023-04-27T23:14:30 EDT" finished-at="2023-04-27T23:14:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnComponentsLink()[pri:20, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsLink" duration-ms="79" started-at="2023-04-27T23:14:34 EDT" finished-at="2023-04-27T23:14:35 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="590" started-at="2023-04-27T23:14:35 EDT" finished-at="2023-04-27T23:14:35 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4521" started-at="2023-04-27T23:14:48 EDT" finished-at="2023-04-27T23:14:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnTabletsLink()[pri:21, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnTabletsLink" duration-ms="650" started-at="2023-04-27T23:14:53 EDT" finished-at="2023-04-27T23:14:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnTabletsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="587" started-at="2023-04-27T23:14:53 EDT" finished-at="2023-04-27T23:14:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4310" started-at="2023-04-27T23:15:08 EDT" finished-at="2023-04-27T23:15:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnSoftwareLink()[pri:22, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnSoftwareLink" duration-ms="625" started-at="2023-04-27T23:15:12 EDT" finished-at="2023-04-27T23:15:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnSoftwareLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="581" started-at="2023-04-27T23:15:13 EDT" finished-at="2023-04-27T23:15:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4283" started-at="2023-04-27T23:15:27 EDT" finished-at="2023-04-27T23:15:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnPhonesAndPDAsLink()[pri:23, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnPhonesAndPDAsLink" duration-ms="1178" started-at="2023-04-27T23:15:31 EDT" finished-at="2023-04-27T23:15:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnPhonesAndPDAsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="583" started-at="2023-04-27T23:15:32 EDT" finished-at="2023-04-27T23:15:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4602" started-at="2023-04-27T23:15:45 EDT" finished-at="2023-04-27T23:15:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnCamerasLink()[pri:24, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnCamerasLink" duration-ms="726" started-at="2023-04-27T23:15:50 EDT" finished-at="2023-04-27T23:15:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnCamerasLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="600" started-at="2023-04-27T23:15:51 EDT" finished-at="2023-04-27T23:15:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4469" started-at="2023-04-27T23:16:03 EDT" finished-at="2023-04-27T23:16:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnMP3PlayersLink()[pri:25, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnMP3PlayersLink" duration-ms="80" started-at="2023-04-27T23:16:07 EDT" finished-at="2023-04-27T23:16:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnMP3PlayersLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="598" started-at="2023-04-27T23:16:07 EDT" finished-at="2023-04-27T23:16:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4362" started-at="2023-04-27T23:16:14 EDT" finished-at="2023-04-27T23:16:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnDesktopsSublinkPC()[pri:26, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnDesktopsSublinkPC" duration-ms="3278" started-at="2023-04-27T23:16:18 EDT" finished-at="2023-04-27T23:16:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnDesktopsSublinkPC -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="605" started-at="2023-04-27T23:16:22 EDT" finished-at="2023-04-27T23:16:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4494" started-at="2023-04-27T23:16:28 EDT" finished-at="2023-04-27T23:16:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnDesktopsSublinkMac()[pri:27, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnDesktopsSublinkMac" duration-ms="704" started-at="2023-04-27T23:16:33 EDT" finished-at="2023-04-27T23:16:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnDesktopsSublinkMac -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="595" started-at="2023-04-27T23:16:34 EDT" finished-at="2023-04-27T23:16:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4333" started-at="2023-04-27T23:16:40 EDT" finished-at="2023-04-27T23:16:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnDesktopsSublinkShowAllDesktops()[pri:28, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnDesktopsSublinkShowAllDesktops" duration-ms="949" started-at="2023-04-27T23:16:45 EDT" finished-at="2023-04-27T23:16:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnDesktopsSublinkShowAllDesktops -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="597" started-at="2023-04-27T23:16:46 EDT" finished-at="2023-04-27T23:16:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4310" started-at="2023-04-27T23:16:55 EDT" finished-at="2023-04-27T23:16:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnLaptopsAndNotebooksSublinkMacs()[pri:29, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnLaptopsAndNotebooksSublinkMacs" duration-ms="651" started-at="2023-04-27T23:16:59 EDT" finished-at="2023-04-27T23:17:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnLaptopsAndNotebooksSublinkMacs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="598" started-at="2023-04-27T23:17:00 EDT" finished-at="2023-04-27T23:17:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4370" started-at="2023-04-27T23:17:07 EDT" finished-at="2023-04-27T23:17:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnLaptopsAndNotebooksSublinkWindows()[pri:30, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnLaptopsAndNotebooksSublinkWindows" duration-ms="683" started-at="2023-04-27T23:17:11 EDT" finished-at="2023-04-27T23:17:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnLaptopsAndNotebooksSublinkWindows -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:17:12 EDT" finished-at="2023-04-27T23:17:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4579" started-at="2023-04-27T23:17:19 EDT" finished-at="2023-04-27T23:17:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnLaptopsAndNotebooksSublinkShowAll()[pri:31, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnLaptopsAndNotebooksSublinkShowAll" duration-ms="690" started-at="2023-04-27T23:17:23 EDT" finished-at="2023-04-27T23:17:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnLaptopsAndNotebooksSublinkShowAll -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="600" started-at="2023-04-27T23:17:24 EDT" finished-at="2023-04-27T23:17:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4401" started-at="2023-04-27T23:17:25 EDT" finished-at="2023-04-27T23:17:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnComponentsSublinkMiceAndTrackballs()[pri:32, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsSublinkMiceAndTrackballs" duration-ms="733" started-at="2023-04-27T23:17:29 EDT" finished-at="2023-04-27T23:17:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsSublinkMiceAndTrackballs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:17:30 EDT" finished-at="2023-04-27T23:17:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4443" started-at="2023-04-27T23:17:30 EDT" finished-at="2023-04-27T23:17:35 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnComponentsSublinkMonitor()[pri:33, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsSublinkMonitor" duration-ms="690" started-at="2023-04-27T23:17:35 EDT" finished-at="2023-04-27T23:17:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsSublinkMonitor -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="599" started-at="2023-04-27T23:17:36 EDT" finished-at="2023-04-27T23:17:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4371" started-at="2023-04-27T23:17:36 EDT" finished-at="2023-04-27T23:17:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnComponentsSublinkPrinters()[pri:34, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsSublinkPrinters" duration-ms="674" started-at="2023-04-27T23:17:41 EDT" finished-at="2023-04-27T23:17:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsSublinkPrinters -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="595" started-at="2023-04-27T23:17:41 EDT" finished-at="2023-04-27T23:17:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4352" started-at="2023-04-27T23:17:42 EDT" finished-at="2023-04-27T23:17:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnComponentsSublinkScanners()[pri:35, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsSublinkScanners" duration-ms="668" started-at="2023-04-27T23:17:46 EDT" finished-at="2023-04-27T23:17:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsSublinkScanners -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:17:47 EDT" finished-at="2023-04-27T23:17:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="4425" started-at="2023-04-27T23:17:47 EDT" finished-at="2023-04-27T23:17:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyClickingOnComponentsSublinkWebCameras()[pri:36, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsSublinkWebCameras" duration-ms="693" started-at="2023-04-27T23:17:52 EDT" finished-at="2023-04-27T23:17:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsSublinkWebCameras -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="592" started-at="2023-04-27T23:17:53 EDT" finished-at="2023-04-27T23:17:53 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="10792" started-at="2023-04-27T23:17:53 EDT" finished-at="2023-04-27T23:18:04 EDT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=112.0.5615.87)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8a8b87a5027b0d35e18b9e0b4d744da, get {url=http://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58060/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8b87a5027b0d35e18b9e0b4d744da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=112.0.5615.87)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8a8b87a5027b0d35e18b9e0b4d744da, get {url=http://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58060/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8b87a5027b0d35e18b9e0b4d744da
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at com.tutorials.ninja.qa.testbase.TestBase.initializeBrowserAndOpenApplication(TestBase.java:54)
+at com.tutorials.ninja.qa.testcases.SearchProductTest.setUp(SearchProductTest.java:36)
+at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:511)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:241)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:581)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifyClickingOnComponentsSublinkShowAllComponents()[pri:37, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnComponentsSublinkShowAllComponents" duration-ms="0" started-at="2023-04-27T23:18:04 EDT" finished-at="2023-04-27T23:18:04 EDT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=112.0.5615.87)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8a8b87a5027b0d35e18b9e0b4d744da, get {url=http://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58060/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8b87a5027b0d35e18b9e0b4d744da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=112.0.5615.87)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8a8b87a5027b0d35e18b9e0b4d744da, get {url=http://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58060/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8b87a5027b0d35e18b9e0b4d744da
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at com.tutorials.ninja.qa.testbase.TestBase.initializeBrowserAndOpenApplication(TestBase.java:54)
+at com.tutorials.ninja.qa.testcases.SearchProductTest.setUp(SearchProductTest.java:36)
+at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:511)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:241)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:581)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnComponentsSublinkShowAllComponents -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="-1682651884405" started-at="2023-04-27T23:18:04 EDT" finished-at="1969-12-31T19:00:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="setUp" is-config="true" duration-ms="-1682651884405" started-at="2023-04-27T23:18:04 EDT" finished-at="1969-12-31T19:00:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="verifyClickingOnMP3PlayersSublinkShowAllMP3Players()[pri:38, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="verifyClickingOnMP3PlayersSublinkShowAllMP3Players" duration-ms="0" started-at="2023-04-27T23:18:04 EDT" finished-at="2023-04-27T23:18:04 EDT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=112.0.5615.87)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8a8b87a5027b0d35e18b9e0b4d744da, get {url=http://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58060/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8b87a5027b0d35e18b9e0b4d744da]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.007
+  (Session info: chrome=112.0.5615.87)
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f8a8b87a5027b0d35e18b9e0b4d744da, get {url=http://tutorialsninja.com/demo}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58060}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58060/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f8a8b87a5027b0d35e18b9e0b4d744da
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+at com.tutorials.ninja.qa.testbase.TestBase.initializeBrowserAndOpenApplication(TestBase.java:54)
+at com.tutorials.ninja.qa.testcases.SearchProductTest.setUp(SearchProductTest.java:36)
+at sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:511)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:241)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:581)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingOnMP3PlayersSublinkShowAllMP3Players -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@41e36e46]" name="tearDown" is-config="true" duration-ms="-1682651884406" started-at="2023-04-27T23:18:04 EDT" finished-at="1969-12-31T19:00:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tutorials.ninja.qa.testcases.SearchProductTest -->
       <class name="com.tutorials.ninja.qa.testcases.LoginTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="setUp" is-config="true" duration-ms="6648" started-at="2023-04-27T23:19:20Z" finished-at="2023-04-27T23:19:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="7146" started-at="2023-04-27T23:06:45 EDT" finished-at="2023-04-27T23:06:52 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="verifyLoginUsingValidCredentials" duration-ms="1111" started-at="2023-04-27T23:19:27Z" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:19:28Z">
+        <test-method status="FAIL" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingValidCredentials" duration-ms="10868" started-at="2023-04-27T23:06:52 EDT" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:07:03 EDT">
           <params>
             <param index="0">
               <value>
@@ -38,18 +686,92 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5825033b832743da71f1f44bf2f5929, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55778/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5825033b832743da71f1f44bf2f5929]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a5825033b832743da71f1f44bf2f5929, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55778}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55778/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a5825033b832743da71f1f44bf2f5929
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy13.getText(Unknown Source)
+at com.tutorials.ninja.qa.testpages.InsideOfLoginPage.editYourAccountInfoDisplayedOrNot(InsideOfLoginPage.java:48)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials(LoginTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="tearDown" is-config="true" duration-ms="668" started-at="2023-04-27T23:19:28Z" finished-at="2023-04-27T23:19:29Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="613" started-at="2023-04-27T23:07:03 EDT" finished-at="2023-04-27T23:07:03 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="setUp" is-config="true" duration-ms="5808" started-at="2023-04-27T23:19:29Z" finished-at="2023-04-27T23:19:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4741" started-at="2023-04-27T23:07:03 EDT" finished-at="2023-04-27T23:07:08 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="verifyLoginUsingValidCredentials" duration-ms="1154" started-at="2023-04-27T23:19:34Z" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:19:35Z">
+        <test-method status="FAIL" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingValidCredentials" duration-ms="10550" started-at="2023-04-27T23:07:08 EDT" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:07:19 EDT">
           <params>
             <param index="0">
               <value>
@@ -62,18 +784,92 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa3aac1f8a86229edf55ef6f3524119f, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55800/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa3aac1f8a86229edf55ef6f3524119f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa3aac1f8a86229edf55ef6f3524119f, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55800}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55800/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa3aac1f8a86229edf55ef6f3524119f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy13.getText(Unknown Source)
+at com.tutorials.ninja.qa.testpages.InsideOfLoginPage.editYourAccountInfoDisplayedOrNot(InsideOfLoginPage.java:48)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials(LoginTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="tearDown" is-config="true" duration-ms="692" started-at="2023-04-27T23:19:35Z" finished-at="2023-04-27T23:19:36Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="627" started-at="2023-04-27T23:07:19 EDT" finished-at="2023-04-27T23:07:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="setUp" is-config="true" duration-ms="5726" started-at="2023-04-27T23:19:36Z" finished-at="2023-04-27T23:19:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="5371" started-at="2023-04-27T23:07:19 EDT" finished-at="2023-04-27T23:07:25 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="verifyLoginUsingValidCredentials" duration-ms="990" started-at="2023-04-27T23:19:42Z" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:19:43Z">
+        <test-method status="PASS" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingValidCredentials" duration-ms="875" started-at="2023-04-27T23:07:25 EDT" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:07:25 EDT">
           <params>
             <param index="0">
               <value>
@@ -89,15 +885,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="tearDown" is-config="true" duration-ms="625" started-at="2023-04-27T23:19:43Z" finished-at="2023-04-27T23:19:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="590" started-at="2023-04-27T23:07:25 EDT" finished-at="2023-04-27T23:07:26 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="setUp" is-config="true" duration-ms="6039" started-at="2023-04-27T23:19:44Z" finished-at="2023-04-27T23:19:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4829" started-at="2023-04-27T23:07:26 EDT" finished-at="2023-04-27T23:07:31 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="verifyLoginUsingValidCredentials" duration-ms="917" started-at="2023-04-27T23:19:50Z" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:19:50Z">
+        <test-method status="FAIL" signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingValidCredentials" duration-ms="10581" started-at="2023-04-27T23:07:31 EDT" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T23:07:41 EDT">
           <params>
             <param index="0">
               <value>
@@ -110,28 +906,1356 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f0458c47e83a03f9aef4ca3a1a30711, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55844/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f0458c47e83a03f9aef4ca3a1a30711]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f0458c47e83a03f9aef4ca3a1a30711, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55844}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55844/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f0458c47e83a03f9aef4ca3a1a30711
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy13.getText(Unknown Source)
+at com.tutorials.ninja.qa.testpages.InsideOfLoginPage.editYourAccountInfoDisplayedOrNot(InsideOfLoginPage.java:48)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials(LoginTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@c267ef4]" name="tearDown" is-config="true" duration-ms="634" started-at="2023-04-27T23:19:50Z" finished-at="2023-04-27T23:19:51Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="612" started-at="2023-04-27T23:07:41 EDT" finished-at="2023-04-27T23:07:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4655" started-at="2023-04-27T23:07:55 EDT" finished-at="2023-04-27T23:07:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingInvalidCredentials()[pri:2, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingInvalidCredentials" duration-ms="629" started-at="2023-04-27T23:07:59 EDT" finished-at="2023-04-27T23:08:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingInvalidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="596" started-at="2023-04-27T23:08:00 EDT" finished-at="2023-04-27T23:08:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4714" started-at="2023-04-27T23:08:13 EDT" finished-at="2023-04-27T23:08:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingInvalidEmailandValidPassword()[pri:3, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingInvalidEmailandValidPassword" duration-ms="607" started-at="2023-04-27T23:08:18 EDT" finished-at="2023-04-27T23:08:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingInvalidEmailandValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="594" started-at="2023-04-27T23:08:18 EDT" finished-at="2023-04-27T23:08:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4726" started-at="2023-04-27T23:08:31 EDT" finished-at="2023-04-27T23:08:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingValidEmailandInvalidPassword()[pri:4, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingValidEmailandInvalidPassword" duration-ms="555" started-at="2023-04-27T23:08:36 EDT" finished-at="2023-04-27T23:08:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingValidEmailandInvalidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="597" started-at="2023-04-27T23:08:36 EDT" finished-at="2023-04-27T23:08:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4694" started-at="2023-04-27T23:08:50 EDT" finished-at="2023-04-27T23:08:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingBlankEmailandValidPassword()[pri:5, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingBlankEmailandValidPassword" duration-ms="455" started-at="2023-04-27T23:08:54 EDT" finished-at="2023-04-27T23:08:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingBlankEmailandValidPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="600" started-at="2023-04-27T23:08:55 EDT" finished-at="2023-04-27T23:08:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4809" started-at="2023-04-27T23:09:09 EDT" finished-at="2023-04-27T23:09:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingValidEmailandBlankPassword()[pri:6, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingValidEmailandBlankPassword" duration-ms="487" started-at="2023-04-27T23:09:14 EDT" finished-at="2023-04-27T23:09:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingValidEmailandBlankPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="588" started-at="2023-04-27T23:09:14 EDT" finished-at="2023-04-27T23:09:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4748" started-at="2023-04-27T23:09:29 EDT" finished-at="2023-04-27T23:09:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingBlankCredentials()[pri:7, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingBlankCredentials" duration-ms="416" started-at="2023-04-27T23:09:33 EDT" finished-at="2023-04-27T23:09:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingBlankCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:09:34 EDT" finished-at="2023-04-27T23:09:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4396" started-at="2023-04-27T23:09:47 EDT" finished-at="2023-04-27T23:09:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginUsingInactiveCredentials()[pri:8, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginUsingInactiveCredentials" duration-ms="544" started-at="2023-04-27T23:09:51 EDT" finished-at="2023-04-27T23:09:51 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUsingInactiveCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="589" started-at="2023-04-27T23:09:51 EDT" finished-at="2023-04-27T23:09:52 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4825" started-at="2023-04-27T23:10:04 EDT" finished-at="2023-04-27T23:10:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyWorkingOfForgetPasswordLink()[pri:9, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyWorkingOfForgetPasswordLink" duration-ms="402" started-at="2023-04-27T23:10:09 EDT" finished-at="2023-04-27T23:10:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingOfForgetPasswordLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="598" started-at="2023-04-27T23:10:09 EDT" finished-at="2023-04-27T23:10:10 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4714" started-at="2023-04-27T23:10:25 EDT" finished-at="2023-04-27T23:10:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut()[pri:10, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut" duration-ms="850" started-at="2023-04-27T23:10:30 EDT" finished-at="2023-04-27T23:10:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="631" started-at="2023-04-27T23:10:31 EDT" finished-at="2023-04-27T23:10:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4812" started-at="2023-04-27T23:10:44 EDT" finished-at="2023-04-27T23:10:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNumberOfUnsuccessfulLoginAttempts" duration-ms="553" started-at="2023-04-27T23:10:49 EDT" finished-at="2023-04-27T23:10:49 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:179)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="596" started-at="2023-04-27T23:10:49 EDT" finished-at="2023-04-27T23:10:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="10035" started-at="2023-04-27T23:10:50 EDT" finished-at="2023-04-27T23:11:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNumberOfUnsuccessfulLoginAttempts" duration-ms="577" started-at="2023-04-27T23:11:00 EDT" finished-at="2023-04-27T23:11:01 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:179)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="624" started-at="2023-04-27T23:11:01 EDT" finished-at="2023-04-27T23:11:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4704" started-at="2023-04-27T23:11:01 EDT" finished-at="2023-04-27T23:11:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNumberOfUnsuccessfulLoginAttempts" duration-ms="530" started-at="2023-04-27T23:11:06 EDT" finished-at="2023-04-27T23:11:06 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:179)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="599" started-at="2023-04-27T23:11:07 EDT" finished-at="2023-04-27T23:11:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4773" started-at="2023-04-27T23:11:07 EDT" finished-at="2023-04-27T23:11:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNumberOfUnsuccessfulLoginAttempts" duration-ms="548" started-at="2023-04-27T23:11:12 EDT" finished-at="2023-04-27T23:11:12 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:179)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="600" started-at="2023-04-27T23:11:12 EDT" finished-at="2023-04-27T23:11:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4792" started-at="2023-04-27T23:11:13 EDT" finished-at="2023-04-27T23:11:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNumberOfUnsuccessfulLoginAttempts" duration-ms="547" started-at="2023-04-27T23:11:18 EDT" finished-at="2023-04-27T23:11:18 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:179)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="603" started-at="2023-04-27T23:11:18 EDT" finished-at="2023-04-27T23:11:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4820" started-at="2023-04-27T23:11:19 EDT" finished-at="2023-04-27T23:11:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNumberOfUnsuccessfulLoginAttempts" duration-ms="568" started-at="2023-04-27T23:11:24 EDT" finished-at="2023-04-27T23:11:24 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:179)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="603" started-at="2023-04-27T23:11:24 EDT" finished-at="2023-04-27T23:11:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4728" started-at="2023-04-27T23:11:38 EDT" finished-at="2023-04-27T23:11:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyNavigationToDifferentPagesFromLoginPage()[pri:12, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNavigationToDifferentPagesFromLoginPage" duration-ms="851" started-at="2023-04-27T23:11:42 EDT" finished-at="2023-04-27T23:11:43 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyNavigationToDifferentPagesFromLoginPage(LoginTest.java:194)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToDifferentPagesFromLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="588" started-at="2023-04-27T23:11:43 EDT" finished-at="2023-04-27T23:11:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="5110" started-at="2023-04-27T23:11:56 EDT" finished-at="2023-04-27T23:12:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyOpeningOfLoginPageInANewTab()[pri:13, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyOpeningOfLoginPageInANewTab" duration-ms="559" started-at="2023-04-27T23:12:01 EDT" finished-at="2023-04-27T23:12:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpeningOfLoginPageInANewTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="608" started-at="2023-04-27T23:12:01 EDT" finished-at="2023-04-27T23:12:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4837" started-at="2023-04-27T23:12:14 EDT" finished-at="2023-04-27T23:12:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyOpeningOfLoginPageInANewWindow()[pri:14, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyOpeningOfLoginPageInANewWindow" duration-ms="1119" started-at="2023-04-27T23:12:19 EDT" finished-at="2023-04-27T23:12:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpeningOfLoginPageInANewWindow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="617" started-at="2023-04-27T23:12:20 EDT" finished-at="2023-04-27T23:12:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4680" started-at="2023-04-27T23:12:32 EDT" finished-at="2023-04-27T23:12:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyProperLogoutAfterLogin()[pri:15, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyProperLogoutAfterLogin" duration-ms="1481" started-at="2023-04-27T23:12:37 EDT" finished-at="2023-04-27T23:12:39 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyProperLogoutAfterLogin(LoginTest.java:234)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProperLogoutAfterLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="599" started-at="2023-04-27T23:12:39 EDT" finished-at="2023-04-27T23:12:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4924" started-at="2023-04-27T23:12:55 EDT" finished-at="2023-04-27T23:12:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyUpdatingThePassword()[pri:16, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyUpdatingThePassword" duration-ms="1991" started-at="2023-04-27T23:12:59 EDT" finished-at="2023-04-27T23:13:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdatingThePassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="605" started-at="2023-04-27T23:13:01 EDT" finished-at="2023-04-27T23:13:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4728" started-at="2023-04-27T23:13:14 EDT" finished-at="2023-04-27T23:13:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyProperLogoutAfterUpdatingThePassword()[pri:17, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyProperLogoutAfterUpdatingThePassword" duration-ms="2661" started-at="2023-04-27T23:13:19 EDT" finished-at="2023-04-27T23:13:21 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyProperLogoutAfterUpdatingThePassword(LoginTest.java:285)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProperLogoutAfterUpdatingThePassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="604" started-at="2023-04-27T23:13:21 EDT" finished-at="2023-04-27T23:13:22 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4783" started-at="2023-04-27T23:13:39 EDT" finished-at="2023-04-27T23:13:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyLoginWithNewPasswordAfterUpdatingThePassword()[pri:18, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginWithNewPasswordAfterUpdatingThePassword" duration-ms="3730" started-at="2023-04-27T23:13:44 EDT" finished-at="2023-04-27T23:13:48 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginWithNewPasswordAfterUpdatingThePassword(LoginTest.java:324)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithNewPasswordAfterUpdatingThePassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="617" started-at="2023-04-27T23:13:48 EDT" finished-at="2023-04-27T23:13:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4834" started-at="2023-04-27T23:14:00 EDT" finished-at="2023-04-27T23:14:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyLoginPressingTheEnterKeyOfKeyboard()[pri:19, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyLoginPressingTheEnterKeyOfKeyboard" duration-ms="805" started-at="2023-04-27T23:14:05 EDT" finished-at="2023-04-27T23:14:06 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginPressingTheEnterKeyOfKeyboard(LoginTest.java:338)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPressingTheEnterKeyOfKeyboard -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="590" started-at="2023-04-27T23:14:06 EDT" finished-at="2023-04-27T23:14:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4823" started-at="2023-04-27T23:14:18 EDT" finished-at="2023-04-27T23:14:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyWorkingOfBackspaceKeyOnLoginPage()[pri:20, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyWorkingOfBackspaceKeyOnLoginPage" duration-ms="568" started-at="2023-04-27T23:14:23 EDT" finished-at="2023-04-27T23:14:23 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyWorkingOfBackspaceKeyOnLoginPage(LoginTest.java:352)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingOfBackspaceKeyOnLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="601" started-at="2023-04-27T23:14:23 EDT" finished-at="2023-04-27T23:14:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4943" started-at="2023-04-27T23:14:35 EDT" finished-at="2023-04-27T23:14:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigationTOcommandInLoginPage()[pri:21, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNavigationTOcommandInLoginPage" duration-ms="774" started-at="2023-04-27T23:14:40 EDT" finished-at="2023-04-27T23:14:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationTOcommandInLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="611" started-at="2023-04-27T23:14:41 EDT" finished-at="2023-04-27T23:14:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4662" started-at="2023-04-27T23:14:54 EDT" finished-at="2023-04-27T23:14:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigationBACKcommandInLoginPage()[pri:22, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNavigationBACKcommandInLoginPage" duration-ms="1720" started-at="2023-04-27T23:14:59 EDT" finished-at="2023-04-27T23:15:00 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationBACKcommandInLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="612" started-at="2023-04-27T23:15:00 EDT" finished-at="2023-04-27T23:15:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4732" started-at="2023-04-27T23:15:13 EDT" finished-at="2023-04-27T23:15:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigationFORWARDcommandOfLoginPage()[pri:23, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNavigationFORWARDcommandOfLoginPage" duration-ms="127" started-at="2023-04-27T23:15:18 EDT" finished-at="2023-04-27T23:15:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationFORWARDcommandOfLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="589" started-at="2023-04-27T23:15:18 EDT" finished-at="2023-04-27T23:15:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4762" started-at="2023-04-27T23:15:33 EDT" finished-at="2023-04-27T23:15:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigationREFRESHcommandInLoginPage()[pri:24, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyNavigationREFRESHcommandInLoginPage" duration-ms="410" started-at="2023-04-27T23:15:38 EDT" finished-at="2023-04-27T23:15:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationREFRESHcommandInLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="604" started-at="2023-04-27T23:15:38 EDT" finished-at="2023-04-27T23:15:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="setUp" is-config="true" duration-ms="4779" started-at="2023-04-27T23:15:51 EDT" finished-at="2023-04-27T23:15:56 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="verifyTabKeyOfTheKeyboardWorksOnLoginPage()[pri:25, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="verifyTabKeyOfTheKeyboardWorksOnLoginPage" duration-ms="808" started-at="2023-04-27T23:15:56 EDT" finished-at="2023-04-27T23:15:57 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Warning message does not match did not expect to find [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyTabKeyOfTheKeyboardWorksOnLoginPage(LoginTest.java:395)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:792)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1103)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:140)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:354)
+at org.testng.SuiteRunner.run(SuiteRunner.java:302)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1145)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
+at org.testng.TestNG.runSuites(TestNG.java:997)
+at org.testng.TestNG.run(TestNG.java:965)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTabKeyOfTheKeyboardWorksOnLoginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@4facf68f]" name="tearDown" is-config="true" duration-ms="588" started-at="2023-04-27T23:15:57 EDT" finished-at="2023-04-27T23:15:57 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tutorials.ninja.qa.testcases.LoginTest -->
       <class name="com.tutorials.ninja.qa.testcases.RegisterTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@30ee2816]" name="setUp" is-config="true" duration-ms="6322" started-at="2023-04-27T23:19:51Z" finished-at="2023-04-27T23:19:57Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4709" started-at="2023-04-27T23:07:42 EDT" finished-at="2023-04-27T23:07:47 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyRegisterAnAccountWithOnlyMandatoryFields()[pri:1, instance:com.tutorials.ninja.qa.testcases.RegisterTest@30ee2816]" name="verifyRegisterAnAccountWithOnlyMandatoryFields" duration-ms="1644" started-at="2023-04-27T23:19:57Z" finished-at="2023-04-27T23:19:59Z">
+        <test-method status="PASS" signature="verifyRegisterAnAccountWithOnlyMandatoryFields()[pri:1, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterAnAccountWithOnlyMandatoryFields" duration-ms="1146" started-at="2023-04-27T23:07:47 EDT" finished-at="2023-04-27T23:07:48 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterAnAccountWithOnlyMandatoryFields -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@30ee2816]" name="tearDown" is-config="true" duration-ms="632" started-at="2023-04-27T23:19:59Z" finished-at="2023-04-27T23:20:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="603" started-at="2023-04-27T23:07:48 EDT" finished-at="2023-04-27T23:07:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4917" started-at="2023-04-27T23:08:01 EDT" finished-at="2023-04-27T23:08:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterAnAccountByProvidingAllFields()[pri:2, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterAnAccountByProvidingAllFields" duration-ms="1196" started-at="2023-04-27T23:08:05 EDT" finished-at="2023-04-27T23:08:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAnAccountByProvidingAllFields -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="586" started-at="2023-04-27T23:08:07 EDT" finished-at="2023-04-27T23:08:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5014" started-at="2023-04-27T23:08:19 EDT" finished-at="2023-04-27T23:08:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterWithOnlyFirstName()[pri:3, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterWithOnlyFirstName" duration-ms="565" started-at="2023-04-27T23:08:24 EDT" finished-at="2023-04-27T23:08:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithOnlyFirstName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="599" started-at="2023-04-27T23:08:25 EDT" finished-at="2023-04-27T23:08:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5108" started-at="2023-04-27T23:08:37 EDT" finished-at="2023-04-27T23:08:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterWithOnlyFirstAndLastName()[pri:4, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterWithOnlyFirstAndLastName" duration-ms="622" started-at="2023-04-27T23:08:42 EDT" finished-at="2023-04-27T23:08:42 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithOnlyFirstAndLastName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="600" started-at="2023-04-27T23:08:42 EDT" finished-at="2023-04-27T23:08:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5235" started-at="2023-04-27T23:08:55 EDT" finished-at="2023-04-27T23:09:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUptoEmail()[pri:5, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUptoEmail" duration-ms="751" started-at="2023-04-27T23:09:01 EDT" finished-at="2023-04-27T23:09:01 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUptoEmail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="608" started-at="2023-04-27T23:09:01 EDT" finished-at="2023-04-27T23:09:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5006" started-at="2023-04-27T23:09:15 EDT" finished-at="2023-04-27T23:09:20 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUptoTelePhoneNumber()[pri:6, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUptoTelePhoneNumber" duration-ms="799" started-at="2023-04-27T23:09:20 EDT" finished-at="2023-04-27T23:09:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUptoTelePhoneNumber -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="587" started-at="2023-04-27T23:09:21 EDT" finished-at="2023-04-27T23:09:21 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4999" started-at="2023-04-27T23:09:34 EDT" finished-at="2023-04-27T23:09:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUptoPassword()[pri:7, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUptoPassword" duration-ms="870" started-at="2023-04-27T23:09:39 EDT" finished-at="2023-04-27T23:09:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUptoPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="592" started-at="2023-04-27T23:09:40 EDT" finished-at="2023-04-27T23:09:41 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5261" started-at="2023-04-27T23:09:52 EDT" finished-at="2023-04-27T23:09:57 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterWithoutCheckingPrivacyPolicy()[pri:8, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterWithoutCheckingPrivacyPolicy" duration-ms="911" started-at="2023-04-27T23:09:57 EDT" finished-at="2023-04-27T23:09:58 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterWithoutCheckingPrivacyPolicy -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="605" started-at="2023-04-27T23:09:58 EDT" finished-at="2023-04-27T23:09:59 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5034" started-at="2023-04-27T23:10:10 EDT" finished-at="2023-04-27T23:10:15 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterByEnteringDifferentPasswordForThePasswordFields()[pri:9, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterByEnteringDifferentPasswordForThePasswordFields" duration-ms="939" started-at="2023-04-27T23:10:15 EDT" finished-at="2023-04-27T23:10:16 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterByEnteringDifferentPasswordForThePasswordFields -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="618" started-at="2023-04-27T23:10:16 EDT" finished-at="2023-04-27T23:10:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5044" started-at="2023-04-27T23:10:32 EDT" finished-at="2023-04-27T23:10:37 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterSubscribedYes()[pri:10, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterSubscribedYes" duration-ms="1206" started-at="2023-04-27T23:10:37 EDT" finished-at="2023-04-27T23:10:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterSubscribedYes -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="594" started-at="2023-04-27T23:10:38 EDT" finished-at="2023-04-27T23:10:38 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5042" started-at="2023-04-27T23:11:25 EDT" finished-at="2023-04-27T23:11:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterSubscribedNo()[pri:11, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterSubscribedNo" duration-ms="1164" started-at="2023-04-27T23:11:30 EDT" finished-at="2023-04-27T23:11:31 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterSubscribedNo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="599" started-at="2023-04-27T23:11:31 EDT" finished-at="2023-04-27T23:11:32 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5148" started-at="2023-04-27T23:11:44 EDT" finished-at="2023-04-27T23:11:49 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingExistingEmail()[pri:12, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingExistingEmail" duration-ms="853" started-at="2023-04-27T23:11:49 EDT" finished-at="2023-04-27T23:11:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingExistingEmail -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="593" started-at="2023-04-27T23:11:50 EDT" finished-at="2023-04-27T23:11:50 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5035" started-at="2023-04-27T23:12:02 EDT" finished-at="2023-04-27T23:12:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingMoreThan32NumbersForTelePhoneNumber()[pri:13, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingMoreThan32NumbersForTelePhoneNumber" duration-ms="899" started-at="2023-04-27T23:12:07 EDT" finished-at="2023-04-27T23:12:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingMoreThan32NumbersForTelePhoneNumber -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="590" started-at="2023-04-27T23:12:08 EDT" finished-at="2023-04-27T23:12:09 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4947" started-at="2023-04-27T23:12:21 EDT" finished-at="2023-04-27T23:12:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterAnAccountWithoutFillingAnything()[pri:14, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterAnAccountWithoutFillingAnything" duration-ms="493" started-at="2023-04-27T23:12:26 EDT" finished-at="2023-04-27T23:12:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAnAccountWithoutFillingAnything -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="592" started-at="2023-04-27T23:12:26 EDT" finished-at="2023-04-27T23:12:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4878" started-at="2023-04-27T23:12:39 EDT" finished-at="2023-04-27T23:12:44 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingMoreThan32CharactersForFirstName()[pri:15, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingMoreThan32CharactersForFirstName" duration-ms="926" started-at="2023-04-27T23:12:44 EDT" finished-at="2023-04-27T23:12:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingMoreThan32CharactersForFirstName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="590" started-at="2023-04-27T23:12:45 EDT" finished-at="2023-04-27T23:12:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4967" started-at="2023-04-27T23:13:02 EDT" finished-at="2023-04-27T23:13:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingMoreThan32CharactersForLastName()[pri:16, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingMoreThan32CharactersForLastName" duration-ms="905" started-at="2023-04-27T23:13:07 EDT" finished-at="2023-04-27T23:13:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingMoreThan32CharactersForLastName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="594" started-at="2023-04-27T23:13:08 EDT" finished-at="2023-04-27T23:13:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4959" started-at="2023-04-27T23:13:22 EDT" finished-at="2023-04-27T23:13:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingMoreThan20CharactersForPassword()[pri:17, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingMoreThan20CharactersForPassword" duration-ms="907" started-at="2023-04-27T23:13:27 EDT" finished-at="2023-04-27T23:13:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingMoreThan20CharactersForPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="592" started-at="2023-04-27T23:13:28 EDT" finished-at="2023-04-27T23:13:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5195" started-at="2023-04-27T23:13:48 EDT" finished-at="2023-04-27T23:13:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingLessThan4CharactersForPassword()[pri:18, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingLessThan4CharactersForPassword" duration-ms="871" started-at="2023-04-27T23:13:54 EDT" finished-at="2023-04-27T23:13:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingLessThan4CharactersForPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="589" started-at="2023-04-27T23:13:55 EDT" finished-at="2023-04-27T23:13:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4977" started-at="2023-04-27T23:14:06 EDT" finished-at="2023-04-27T23:14:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRegisterUsingLessThan3NumbersForTelePhoneNumber()[pri:19, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyRegisterUsingLessThan3NumbersForTelePhoneNumber" duration-ms="861" started-at="2023-04-27T23:14:11 EDT" finished-at="2023-04-27T23:14:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUsingLessThan3NumbersForTelePhoneNumber -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="592" started-at="2023-04-27T23:14:12 EDT" finished-at="2023-04-27T23:14:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5069" started-at="2023-04-27T23:14:24 EDT" finished-at="2023-04-27T23:14:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyOpeningOfRegisterPageInANewTab()[pri:20, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyOpeningOfRegisterPageInANewTab" duration-ms="541" started-at="2023-04-27T23:14:29 EDT" finished-at="2023-04-27T23:14:29 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpeningOfRegisterPageInANewTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="598" started-at="2023-04-27T23:14:29 EDT" finished-at="2023-04-27T23:14:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4937" started-at="2023-04-27T23:14:41 EDT" finished-at="2023-04-27T23:14:46 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyOpeningOfRegisterPageInANewWindow()[pri:21, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyOpeningOfRegisterPageInANewWindow" duration-ms="1082" started-at="2023-04-27T23:14:46 EDT" finished-at="2023-04-27T23:14:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOpeningOfRegisterPageInANewWindow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="611" started-at="2023-04-27T23:14:47 EDT" finished-at="2023-04-27T23:14:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4915" started-at="2023-04-27T23:15:01 EDT" finished-at="2023-04-27T23:15:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginAfterRegistration()[pri:22, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyLoginAfterRegistration" duration-ms="1590" started-at="2023-04-27T23:15:06 EDT" finished-at="2023-04-27T23:15:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginAfterRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="603" started-at="2023-04-27T23:15:07 EDT" finished-at="2023-04-27T23:15:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4969" started-at="2023-04-27T23:15:19 EDT" finished-at="2023-04-27T23:15:24 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyProperLogoutAfterRegistration()[pri:23, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyProperLogoutAfterRegistration" duration-ms="2231" started-at="2023-04-27T23:15:24 EDT" finished-at="2023-04-27T23:15:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProperLogoutAfterRegistration -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="604" started-at="2023-04-27T23:15:26 EDT" finished-at="2023-04-27T23:15:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4947" started-at="2023-04-27T23:15:39 EDT" finished-at="2023-04-27T23:15:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyENTERKeyOfKeyboardWorksOnRegistrationPage()[pri:24, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyENTERKeyOfKeyboardWorksOnRegistrationPage" duration-ms="1159" started-at="2023-04-27T23:15:43 EDT" finished-at="2023-04-27T23:15:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyENTERKeyOfKeyboardWorksOnRegistrationPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="591" started-at="2023-04-27T23:15:45 EDT" finished-at="2023-04-27T23:15:45 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4930" started-at="2023-04-27T23:15:57 EDT" finished-at="2023-04-27T23:16:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyBACKSPACEofKeyboardWorksInRegisterPage()[pri:25, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyBACKSPACEofKeyboardWorksInRegisterPage" duration-ms="84" started-at="2023-04-27T23:16:02 EDT" finished-at="2023-04-27T23:16:02 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBACKSPACEofKeyboardWorksInRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="596" started-at="2023-04-27T23:16:02 EDT" finished-at="2023-04-27T23:16:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="5067" started-at="2023-04-27T23:16:08 EDT" finished-at="2023-04-27T23:16:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyCopyAndPasteWorksOnRegisterPage()[pri:26, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyCopyAndPasteWorksOnRegisterPage" duration-ms="161" started-at="2023-04-27T23:16:13 EDT" finished-at="2023-04-27T23:16:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCopyAndPasteWorksOnRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="614" started-at="2023-04-27T23:16:13 EDT" finished-at="2023-04-27T23:16:14 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4879" started-at="2023-04-27T23:16:22 EDT" finished-at="2023-04-27T23:16:27 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigateTOcommandInRegisterPage()[pri:27, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyNavigateTOcommandInRegisterPage" duration-ms="730" started-at="2023-04-27T23:16:27 EDT" finished-at="2023-04-27T23:16:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigateTOcommandInRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="601" started-at="2023-04-27T23:16:28 EDT" finished-at="2023-04-27T23:16:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4967" started-at="2023-04-27T23:16:34 EDT" finished-at="2023-04-27T23:16:39 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigateBACKcommandInRegisterPage()[pri:28, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyNavigateBACKcommandInRegisterPage" duration-ms="733" started-at="2023-04-27T23:16:39 EDT" finished-at="2023-04-27T23:16:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigateBACKcommandInRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="613" started-at="2023-04-27T23:16:40 EDT" finished-at="2023-04-27T23:16:40 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="7575" started-at="2023-04-27T23:16:46 EDT" finished-at="2023-04-27T23:16:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigationFORWARDcommandInRegisterPage()[pri:29, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyNavigationFORWARDcommandInRegisterPage" duration-ms="95" started-at="2023-04-27T23:16:54 EDT" finished-at="2023-04-27T23:16:54 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationFORWARDcommandInRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="604" started-at="2023-04-27T23:16:54 EDT" finished-at="2023-04-27T23:16:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4902" started-at="2023-04-27T23:17:00 EDT" finished-at="2023-04-27T23:17:05 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyNavigationREFRESHcommandInRegisterPage()[pri:30, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyNavigationREFRESHcommandInRegisterPage" duration-ms="799" started-at="2023-04-27T23:17:05 EDT" finished-at="2023-04-27T23:17:06 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationREFRESHcommandInRegisterPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="609" started-at="2023-04-27T23:17:06 EDT" finished-at="2023-04-27T23:17:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="setUp" is-config="true" duration-ms="4996" started-at="2023-04-27T23:17:12 EDT" finished-at="2023-04-27T23:17:17 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyWorkingOfTABkeyOfKeyBoardInRegistrationPage()[pri:31, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="verifyWorkingOfTABkeyOfKeyBoardInRegistrationPage" duration-ms="1066" started-at="2023-04-27T23:17:17 EDT" finished-at="2023-04-27T23:17:18 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWorkingOfTABkeyOfKeyBoardInRegistrationPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@76508ed1]" name="tearDown" is-config="true" duration-ms="584" started-at="2023-04-27T23:17:18 EDT" finished-at="2023-04-27T23:17:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tutorials.ninja.qa.testcases.RegisterTest -->
-    </test> <!-- TutorialsNinja Tests -->
+    </test> <!-- Tutorials Ninja Test Cases -->
   </suite> <!-- TutorialsNinja Automation Suite -->
 </testng-results>

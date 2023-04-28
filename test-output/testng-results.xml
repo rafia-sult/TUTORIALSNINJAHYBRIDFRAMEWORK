@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="35" passed="27" failed="8" skipped="0">
+<testng-results ignored="0" total="6" passed="3" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-27T14:20:28 EDT" name="Default suite" finished-at="2023-04-27T14:24:20 EDT" duration-ms="231564">
+  <suite started-at="2023-04-28T03:02:23Z" name="TutorialsNinja Automation Suite" finished-at="2023-04-28T03:03:31Z" duration-ms="67703">
     <groups>
     </groups>
-    <test started-at="2023-04-27T14:20:28 EDT" name="Default test" finished-at="2023-04-27T14:24:20 EDT" duration-ms="231564">
-      <class name="com.tutorials.ninja.qa.testcases.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:28 EDT" name="setUp" finished-at="2023-04-27T14:20:36 EDT" duration-ms="7513" status="PASS">
+    <test started-at="2023-04-28T03:02:23Z" name="Tutorials Ninja Test Cases" finished-at="2023-04-28T03:03:31Z" duration-ms="67703">
+      <class name="com.tutorials.ninja.qa.testcases.SearchProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@648c94da]" started-at="2023-04-28T03:03:23Z" name="setUp" finished-at="2023-04-28T03:03:31Z" duration-ms="7664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:36 EDT" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T14:20:37 EDT" duration-ms="1130" status="PASS">
+        <test-method signature="verifySearchBoxIsClickable()[pri:1, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@648c94da]" started-at="2023-04-28T03:03:31Z" name="verifySearchBoxIsClickable" finished-at="2023-04-28T03:03:31Z" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBoxIsClickable -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.SearchProductTest@648c94da]" started-at="2023-04-28T03:03:31Z" name="tearDown" finished-at="2023-04-28T03:03:31Z" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tutorials.ninja.qa.testcases.SearchProductTest -->
+      <class name="com.tutorials.ninja.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:23Z" name="setUp" finished-at="2023-04-28T03:02:29Z" duration-ms="5850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:29Z" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-28T03:02:40Z" duration-ms="10603" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,18 +38,89 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ee5d18b16b3e43a602536d1514d263e, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55578/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ee5d18b16b3e43a602536d1514d263e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ee5d18b16b3e43a602536d1514d263e, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55578}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55578/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ee5d18b16b3e43a602536d1514d263e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+at com.tutorials.ninja.qa.testpages.InsideOfLoginPage.editYourAccountInfoDisplayedOrNot(InsideOfLoginPage.java:48)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials(LoginTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:37 EDT" name="tearDown" finished-at="2023-04-27T14:20:37 EDT" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:40Z" name="tearDown" finished-at="2023-04-28T03:02:40Z" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:37 EDT" name="setUp" finished-at="2023-04-27T14:20:43 EDT" duration-ms="5604" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:40Z" name="setUp" finished-at="2023-04-28T03:02:45Z" duration-ms="4818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:43 EDT" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T14:20:44 EDT" duration-ms="991" status="PASS">
+        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:45Z" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-28T03:02:55Z" duration-ms="10572" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -48,18 +133,89 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f963637558f0be7f6a30ad3135b4c73d, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55604/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f963637558f0be7f6a30ad3135b4c73d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f963637558f0be7f6a30ad3135b4c73d, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55604}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55604/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f963637558f0be7f6a30ad3135b4c73d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+at com.tutorials.ninja.qa.testpages.InsideOfLoginPage.editYourAccountInfoDisplayedOrNot(InsideOfLoginPage.java:48)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials(LoginTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:44 EDT" name="tearDown" finished-at="2023-04-27T14:20:44 EDT" duration-ms="121" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:55Z" name="tearDown" finished-at="2023-04-28T03:02:56Z" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:44 EDT" name="setUp" finished-at="2023-04-27T14:20:49 EDT" duration-ms="5513" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:02:56Z" name="setUp" finished-at="2023-04-28T03:03:01Z" duration-ms="4920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:49 EDT" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T14:20:50 EDT" duration-ms="1008" status="PASS">
+        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:03:01Z" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-28T03:03:01Z" duration-ms="827" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,15 +231,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:50 EDT" name="tearDown" finished-at="2023-04-27T14:20:51 EDT" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:03:01Z" name="tearDown" finished-at="2023-04-28T03:03:01Z" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:51 EDT" name="setUp" finished-at="2023-04-27T14:20:56 EDT" duration-ms="5523" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:03:01Z" name="setUp" finished-at="2023-04-28T03:03:06Z" duration-ms="4768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:56 EDT" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-27T14:20:57 EDT" duration-ms="1094" status="PASS">
+        <test-method signature="verifyLoginUsingValidCredentials(java.lang.String, java.lang.String)[pri:1, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:03:06Z" name="verifyLoginUsingValidCredentials" data-provider="TutorialsNinjaDataProviderSupply" finished-at="2023-04-28T03:03:17Z" duration-ms="10559" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -96,746 +252,99 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05f02772c417423779196492ff56fc2a, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55652/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 05f02772c417423779196492ff56fc2a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Edit your account information"}
+  (Session info: chrome=112.0.5615.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05f02772c417423779196492ff56fc2a, findElement {using=link text, value=Edit your account information}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\RAFIAS~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55652/devtoo..., se:cdpVersion: 112.0.5615.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 05f02772c417423779196492ff56fc2a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy17.getText(Unknown Source)
+at com.tutorials.ninja.qa.testpages.InsideOfLoginPage.editYourAccountInfoDisplayedOrNot(InsideOfLoginPage.java:48)
+at com.tutorials.ninja.qa.testcases.LoginTest.verifyLoginUsingValidCredentials(LoginTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginUsingValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:57 EDT" name="tearDown" finished-at="2023-04-27T14:20:57 EDT" duration-ms="167" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:20:57 EDT" name="setUp" finished-at="2023-04-27T14:21:03 EDT" duration-ms="5321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingInvalidCredentials()[pri:2, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:03 EDT" name="verifyLoginUsingInvalidCredentials" finished-at="2023-04-27T14:21:03 EDT" duration-ms="759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingInvalidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:03 EDT" name="tearDown" finished-at="2023-04-27T14:21:04 EDT" duration-ms="142" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:04 EDT" name="setUp" finished-at="2023-04-27T14:21:09 EDT" duration-ms="5366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingInvalidEmailandValidPassword()[pri:3, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:09 EDT" name="verifyLoginUsingInvalidEmailandValidPassword" finished-at="2023-04-27T14:21:10 EDT" duration-ms="917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingInvalidEmailandValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:10 EDT" name="tearDown" finished-at="2023-04-27T14:21:10 EDT" duration-ms="131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:10 EDT" name="setUp" finished-at="2023-04-27T14:21:16 EDT" duration-ms="5709" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingValidEmailandInvalidPassword()[pri:4, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:16 EDT" name="verifyLoginUsingValidEmailandInvalidPassword" finished-at="2023-04-27T14:21:17 EDT" duration-ms="792" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingValidEmailandInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:17 EDT" name="tearDown" finished-at="2023-04-27T14:21:17 EDT" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:17 EDT" name="setUp" finished-at="2023-04-27T14:21:22 EDT" duration-ms="5717" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingBlankEmailandValidPassword()[pri:5, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:22 EDT" name="verifyLoginUsingBlankEmailandValidPassword" finished-at="2023-04-27T14:21:23 EDT" duration-ms="571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingBlankEmailandValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:23 EDT" name="tearDown" finished-at="2023-04-27T14:21:23 EDT" duration-ms="125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:23 EDT" name="setUp" finished-at="2023-04-27T14:21:29 EDT" duration-ms="5669" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingValidEmailandBlankPassword()[pri:6, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:29 EDT" name="verifyLoginUsingValidEmailandBlankPassword" finished-at="2023-04-27T14:21:29 EDT" duration-ms="660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingValidEmailandBlankPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:29 EDT" name="tearDown" finished-at="2023-04-27T14:21:30 EDT" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:30 EDT" name="setUp" finished-at="2023-04-27T14:21:35 EDT" duration-ms="5695" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingBlankCredentials()[pri:7, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:35 EDT" name="verifyLoginUsingBlankCredentials" finished-at="2023-04-27T14:21:36 EDT" duration-ms="426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingBlankCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:36 EDT" name="tearDown" finished-at="2023-04-27T14:21:36 EDT" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:36 EDT" name="setUp" finished-at="2023-04-27T14:21:41 EDT" duration-ms="5370" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginUsingInactiveCredentials()[pri:8, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:41 EDT" name="verifyLoginUsingInactiveCredentials" finished-at="2023-04-27T14:21:42 EDT" duration-ms="912" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginUsingInactiveCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:42 EDT" name="tearDown" finished-at="2023-04-27T14:21:42 EDT" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:42 EDT" name="setUp" finished-at="2023-04-27T14:21:48 EDT" duration-ms="5357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyWorkingOfForgetPasswordLink()[pri:9, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:48 EDT" name="verifyWorkingOfForgetPasswordLink" finished-at="2023-04-27T14:21:48 EDT" duration-ms="749" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWorkingOfForgetPasswordLink -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:48 EDT" name="tearDown" finished-at="2023-04-27T14:21:49 EDT" duration-ms="174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:49 EDT" name="setUp" finished-at="2023-04-27T14:21:54 EDT" duration-ms="5665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut()[pri:10, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:54 EDT" name="verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut" finished-at="2023-04-27T14:21:55 EDT" duration-ms="983" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginIntoApplicationAndBrowsingBackWithoutBeingLoggedOut -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:55 EDT" name="tearDown" finished-at="2023-04-27T14:21:55 EDT" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:21:55 EDT" name="setUp" finished-at="2023-04-27T14:22:01 EDT" duration-ms="5300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:01 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:01 EDT" duration-ms="35" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:01 EDT" name="tearDown" finished-at="2023-04-27T14:22:01 EDT" duration-ms="200" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:01 EDT" name="setUp" finished-at="2023-04-27T14:22:07 EDT" duration-ms="5635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:07 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:07 EDT" duration-ms="11" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:07 EDT" name="tearDown" finished-at="2023-04-27T14:22:07 EDT" duration-ms="127" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:07 EDT" name="setUp" finished-at="2023-04-27T14:22:12 EDT" duration-ms="5401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:12 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:12 EDT" duration-ms="16" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:12 EDT" name="tearDown" finished-at="2023-04-27T14:22:12 EDT" duration-ms="139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:12 EDT" name="setUp" finished-at="2023-04-27T14:22:18 EDT" duration-ms="5516" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:18 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:18 EDT" duration-ms="18" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:18 EDT" name="tearDown" finished-at="2023-04-27T14:22:18 EDT" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:18 EDT" name="setUp" finished-at="2023-04-27T14:22:24 EDT" duration-ms="5647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:24 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:24 EDT" duration-ms="15" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:24 EDT" name="tearDown" finished-at="2023-04-27T14:22:24 EDT" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:24 EDT" name="setUp" finished-at="2023-04-27T14:22:29 EDT" duration-ms="5178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:29 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:29 EDT" duration-ms="8" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:29 EDT" name="tearDown" finished-at="2023-04-27T14:22:29 EDT" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:29 EDT" name="setUp" finished-at="2023-04-27T14:22:34 EDT" duration-ms="4987" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:34 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:34 EDT" duration-ms="14" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:34 EDT" name="tearDown" finished-at="2023-04-27T14:22:34 EDT" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:34 EDT" name="setUp" finished-at="2023-04-27T14:22:39 EDT" duration-ms="5116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNumberOfUnsuccessfulLoginAttempts()[pri:11, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:39 EDT" name="verifyNumberOfUnsuccessfulLoginAttempts" finished-at="2023-04-27T14:22:39 EDT" duration-ms="12" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Keys to send should be a not null CharSequence]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.tutorials.ninja.qa.testpages.LoginPage.enterEmailId(LoginPage.java:40)
-at com.tutorials.ninja.qa.testcases.LoginTest.verifyNumberOfUnsuccessfulLoginAttempts(LoginTest.java:172)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNumberOfUnsuccessfulLoginAttempts -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:39 EDT" name="tearDown" finished-at="2023-04-27T14:22:39 EDT" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:39 EDT" name="setUp" finished-at="2023-04-27T14:22:45 EDT" duration-ms="5379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNavigationToDifferentPagesFromLoginPage()[pri:12, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:45 EDT" name="verifyNavigationToDifferentPagesFromLoginPage" finished-at="2023-04-27T14:22:47 EDT" duration-ms="2321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationToDifferentPagesFromLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:47 EDT" name="tearDown" finished-at="2023-04-27T14:22:47 EDT" duration-ms="237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:47 EDT" name="setUp" finished-at="2023-04-27T14:22:53 EDT" duration-ms="5605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyOpeningOfLoginPageInANewTab()[pri:13, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:53 EDT" name="verifyOpeningOfLoginPageInANewTab" finished-at="2023-04-27T14:22:54 EDT" duration-ms="691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOpeningOfLoginPageInANewTab -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:54 EDT" name="tearDown" finished-at="2023-04-27T14:22:54 EDT" duration-ms="131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:54 EDT" name="setUp" finished-at="2023-04-27T14:22:59 EDT" duration-ms="5344" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyOpeningOfLoginPageInANewWindow()[pri:14, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:22:59 EDT" name="verifyOpeningOfLoginPageInANewWindow" finished-at="2023-04-27T14:23:01 EDT" duration-ms="1363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyOpeningOfLoginPageInANewWindow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:01 EDT" name="tearDown" finished-at="2023-04-27T14:23:01 EDT" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:01 EDT" name="setUp" finished-at="2023-04-27T14:23:06 EDT" duration-ms="5323" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyProperLogoutAfterLogin()[pri:15, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:06 EDT" name="verifyProperLogoutAfterLogin" finished-at="2023-04-27T14:23:08 EDT" duration-ms="1689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProperLogoutAfterLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:08 EDT" name="tearDown" finished-at="2023-04-27T14:23:08 EDT" duration-ms="171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:08 EDT" name="setUp" finished-at="2023-04-27T14:23:13 EDT" duration-ms="5456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyUpdatingThePassword()[pri:16, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:13 EDT" name="verifyUpdatingThePassword" finished-at="2023-04-27T14:23:16 EDT" duration-ms="2259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdatingThePassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:16 EDT" name="tearDown" finished-at="2023-04-27T14:23:16 EDT" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:16 EDT" name="setUp" finished-at="2023-04-27T14:23:21 EDT" duration-ms="5429" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyProperLogoutAfterUpdatingThePassword()[pri:17, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:21 EDT" name="verifyProperLogoutAfterUpdatingThePassword" finished-at="2023-04-27T14:23:25 EDT" duration-ms="3424" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProperLogoutAfterUpdatingThePassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:25 EDT" name="tearDown" finished-at="2023-04-27T14:23:25 EDT" duration-ms="170" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:25 EDT" name="setUp" finished-at="2023-04-27T14:23:31 EDT" duration-ms="5786" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginWithNewPasswordAfterUpdatingThePassword()[pri:18, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:31 EDT" name="verifyLoginWithNewPasswordAfterUpdatingThePassword" finished-at="2023-04-27T14:23:35 EDT" duration-ms="4711" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNewPasswordAfterUpdatingThePassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:35 EDT" name="tearDown" finished-at="2023-04-27T14:23:35 EDT" duration-ms="173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:35 EDT" name="setUp" finished-at="2023-04-27T14:23:41 EDT" duration-ms="5603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyLoginPressingTheEnterKeyOfKeyboard()[pri:19, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:41 EDT" name="verifyLoginPressingTheEnterKeyOfKeyboard" finished-at="2023-04-27T14:23:42 EDT" duration-ms="892" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPressingTheEnterKeyOfKeyboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:42 EDT" name="tearDown" finished-at="2023-04-27T14:23:42 EDT" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:42 EDT" name="setUp" finished-at="2023-04-27T14:23:48 EDT" duration-ms="5650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyWorkingOfBackspaceKeyOnLoginPage()[pri:20, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:48 EDT" name="verifyWorkingOfBackspaceKeyOnLoginPage" finished-at="2023-04-27T14:23:48 EDT" duration-ms="624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyWorkingOfBackspaceKeyOnLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:48 EDT" name="tearDown" finished-at="2023-04-27T14:23:48 EDT" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:48 EDT" name="setUp" finished-at="2023-04-27T14:23:54 EDT" duration-ms="5374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNavigationTOcommandInLoginPage()[pri:21, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:54 EDT" name="verifyNavigationTOcommandInLoginPage" finished-at="2023-04-27T14:23:55 EDT" duration-ms="739" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationTOcommandInLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:55 EDT" name="tearDown" finished-at="2023-04-27T14:23:55 EDT" duration-ms="192" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:23:55 EDT" name="setUp" finished-at="2023-04-27T14:24:00 EDT" duration-ms="5567" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNavigationBACKcommandInLoginPage()[pri:22, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:00 EDT" name="verifyNavigationBACKcommandInLoginPage" finished-at="2023-04-27T14:24:01 EDT" duration-ms="1018" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationBACKcommandInLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:01 EDT" name="tearDown" finished-at="2023-04-27T14:24:02 EDT" duration-ms="179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:02 EDT" name="setUp" finished-at="2023-04-27T14:24:07 EDT" duration-ms="5403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNavigationFORWARDcommandOfLoginPage()[pri:23, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:07 EDT" name="verifyNavigationFORWARDcommandOfLoginPage" finished-at="2023-04-27T14:24:07 EDT" duration-ms="143" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationFORWARDcommandOfLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:07 EDT" name="tearDown" finished-at="2023-04-27T14:24:07 EDT" duration-ms="150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:07 EDT" name="setUp" finished-at="2023-04-27T14:24:13 EDT" duration-ms="5469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyNavigationREFRESHcommandInLoginPage()[pri:24, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:13 EDT" name="verifyNavigationREFRESHcommandInLoginPage" finished-at="2023-04-27T14:24:13 EDT" duration-ms="543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavigationREFRESHcommandInLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:13 EDT" name="tearDown" finished-at="2023-04-27T14:24:13 EDT" duration-ms="234" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:13 EDT" name="setUp" finished-at="2023-04-27T14:24:19 EDT" duration-ms="5368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyTabKeyOfTheKeyboardWorksOnLoginPage()[pri:25, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:19 EDT" name="verifyTabKeyOfTheKeyboardWorksOnLoginPage" finished-at="2023-04-27T14:24:20 EDT" duration-ms="929" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTabKeyOfTheKeyboardWorksOnLoginPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@563f38c4]" started-at="2023-04-27T14:24:20 EDT" name="tearDown" finished-at="2023-04-27T14:24:20 EDT" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.LoginTest@1b7c473a]" started-at="2023-04-28T03:03:17Z" name="tearDown" finished-at="2023-04-28T03:03:17Z" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.tutorials.ninja.qa.testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.tutorials.ninja.qa.testcases.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@5e4bd84a]" started-at="2023-04-28T03:03:17Z" name="setUp" finished-at="2023-04-28T03:03:22Z" duration-ms="5034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyRegisterAnAccountWithOnlyMandatoryFields()[pri:1, instance:com.tutorials.ninja.qa.testcases.RegisterTest@5e4bd84a]" started-at="2023-04-28T03:03:22Z" name="verifyRegisterAnAccountWithOnlyMandatoryFields" finished-at="2023-04-28T03:03:23Z" duration-ms="1144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterAnAccountWithOnlyMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorials.ninja.qa.testcases.RegisterTest@5e4bd84a]" started-at="2023-04-28T03:03:23Z" name="tearDown" finished-at="2023-04-28T03:03:23Z" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tutorials.ninja.qa.testcases.RegisterTest -->
+    </test> <!-- Tutorials Ninja Test Cases -->
+  </suite> <!-- TutorialsNinja Automation Suite -->
 </testng-results>
