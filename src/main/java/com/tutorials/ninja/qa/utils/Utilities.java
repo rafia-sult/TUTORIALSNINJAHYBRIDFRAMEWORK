@@ -58,7 +58,7 @@ public class Utilities {
 
 	public static final int implicitWaitTime = 10;
 	public static final int pageLoadTime = 10;
-	public static final int scriptTime = 2000;
+	public static final int scriptTime = 1000;
 
 
 

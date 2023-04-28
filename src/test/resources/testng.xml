@@ -9,8 +9,7 @@
 		<classes>
 			<class name="com.tutorials.ninja.qa.testcases.LoginTest" />
 			<class name="com.tutorials.ninja.qa.testcases.RegisterTest" />
-			<class
-				name="com.tutorials.ninja.qa.testcases.SearchProductTest" />
+			<class name="com.tutorials.ninja.qa.testcases.SearchProductTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
